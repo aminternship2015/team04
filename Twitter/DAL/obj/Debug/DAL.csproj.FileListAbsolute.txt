@@ -21,3 +21,4 @@ C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\DAL\bin\Debug\EntityFrame
 C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\DAL\obj\Debug\DAL.dll
 C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\DAL\obj\Debug\DAL.pdb
+D:\GIT\team04\Twitter\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

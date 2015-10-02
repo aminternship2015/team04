@@ -33,7 +33,6 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
     <Property Name="User_Id" Type="Int32" Nullable="false" />
-    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Body" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
     <Property Name="Date_time" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="User" Relationship="TwitterModel.FK__Tweets__User_Id__145C0A3F" FromRole="Tweets" ToRole="Users" />

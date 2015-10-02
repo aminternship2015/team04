@@ -31,7 +31,6 @@
     </Key>
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="User_Id" Type="int" Nullable="false" />
-    <Property Name="Title" Type="varchar" Nullable="false" MaxLength="50" />
     <Property Name="Body" Type="varchar" Nullable="false" MaxLength="250" />
     <Property Name="Date_time" Type="datetime" Nullable="false" />
   </EntityType>
