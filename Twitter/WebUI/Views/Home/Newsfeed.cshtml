@@ -1,4 +1,4 @@
-﻿@model Models.TweetModel
+﻿@model ICollection<DAL.Entities.Tweet>
 
 @{
     Layout = null;
@@ -15,13 +15,12 @@
     <div>
         Newsfeed
     </div>
+    @Html.Partial("~/Views/Twitter/TwitterPartial.cshtml", new Models.TweetModel())
 
-    @using(Html.BeginForm())
+    @foreach(var item in Model)
     {
-        <p>Whats new ?</p>
-        @Html.TextAreaFor(model => model.Body)
-        <input type="submit" value="Tweet!" />
-        @Html.ValidationSummary()
+        <p>@item.Date_time</p>
+        <p>@item.Body</p>
     }
 </body>
 </html>

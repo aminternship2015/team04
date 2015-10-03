@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Converter;
 using DAL;
+using DAL.Entities;
 using Models;
-using Converter;
+using System.Linq;
 
 namespace Services
 {
@@ -37,14 +34,18 @@ namespace Services
             return !allUsers.Any(x => x.Email == email);
         }
 
-        public bool IsUsernamePassCorrect(LogInUserModel model)
+        public User IsUsernamePassCorrect(LogInUserModel model)
         {
             var curUser = userContext.GetByUsername(model.Username);
+
+            curUser.Tweets = curUser.Tweets;
+
             if (curUser != null)
             {
-                return curUser.Passwrd == model.Passwrd;
+                return curUser;
             }
-            return false;
+
+            return null;
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using Models;
 using System;
 using Services;
+using DAL.Entities;
 namespace WebUI.Controllers
 {
     public class HomeController : Controller
@@ -21,28 +22,21 @@ namespace WebUI.Controllers
             return View();
         }
 
-
-
         public ActionResult Newsfeed()
         {
-            if (true)
-            {
-                return View();
-            }
-            //else
-            //{
-            //    return RedirectToAction("Index", "Home", new { Msg = "Not logged In" });
-            //}
+            var CurrentUser = HttpContext.Session["CurrentUser"] as User;
+            return View(CurrentUser.Tweets);
         }
 
         [HttpPost]
         public ActionResult Newsfeed(TweetModel tweet)
         {
+            var CurrentUser = HttpContext.Session["CurrentUser"] as User;
             if (ModelState.IsValid)
             {
-                TweetModel test = new TweetModel() { Body = "test", Date_time = DateTime.Now, User_Id = 1};
+                TweetModel test = new TweetModel() { Body = tweet.Body, Date_time = DateTime.Now, User_Id = CurrentUser.Id};
                 tweetS.AddNewTweet(test);
-                return RedirectToAction("Home", "Index");
+                return RedirectToAction("Newsfeed", "Home");
 
             }
             return View();

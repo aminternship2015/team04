@@ -22,5 +22,12 @@ namespace WebUI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             DependencyConfig.Config();
         }
+
+        protected void Session_Start(Object sender, EventArgs e)
+        {
+            DAL.Entities.User currentUser = null;
+            HttpContext.Current.Session.Timeout = 800;
+            HttpContext.Current.Session.Add("CurrentUser", currentUser);
+        }
     }
 }

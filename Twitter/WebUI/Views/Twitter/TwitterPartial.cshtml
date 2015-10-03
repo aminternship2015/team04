@@ -1,0 +1,25 @@
+﻿@model Models.TweetModel
+
+<script>
+    $(document).ready(function () {
+        $(".reg_button").click(function () {
+            $.ajax({
+                url: '/Home/NewsFeed/',
+                type: "POST",
+                data: {
+                    Body: $('#Body').val()
+                },
+                success: function (data) {
+                    $('.reg_error_mes').html(data);
+                }
+            })
+        });
+    });
+</script>
+@using (Html.BeginForm())
+{
+    <p>Whats new ?</p>
+    @Html.TextAreaFor(model => model.Body)
+    <input type="submit" value="Tweet!" />
+    @Html.ValidationSummary()
+}

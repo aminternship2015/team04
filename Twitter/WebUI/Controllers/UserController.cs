@@ -61,15 +61,9 @@ namespace WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (userService.IsUsernamePassCorrect(currentUser))
-                {
-                    return RedirectToAction("Newsfeed", "Home");
-                }
-                else
-                {
-                    ViewBag.errorMessage = "Username or Password is incorrect!";
-                    return View();
-                }
+                HttpContext.Session["CurrentUser"] = userService.IsUsernamePassCorrect(currentUser);
+
+                return RedirectToAction("Newsfeed", "Home");
             }
             return View();
         }

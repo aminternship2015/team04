@@ -7,65 +7,55 @@ using DAL.Entities;
 
 namespace DAL
 {
-    public class UserDao : IUserDao
+    public class UserDao : IUserDao, IDisposable
     {
         TwitterEntities context;
 
         public UserDao()
         {
-            //twitterDB = new TwitterEntities();
+            context = new TwitterEntities();
         }
 
         public ICollection<User> GetList()
         {
             ICollection<User> result;
-            using (context = new TwitterEntities())
-            {
-                result = context.Users.ToList(); 
-            }
+            result = context.Users.ToList();
             return result;
         }
 
         public bool Add(User user)
         {
             bool result = false;
-            using (context = new TwitterEntities())
-            {
-                context.Users.Add(user);
-                result = context.SaveChanges() > 0;
-            }
+            context.Users.Add(user);
+            result = context.SaveChanges() > 0;
             return result;
         }
 
         public bool Delete(User user)
         {
             bool result = false;
-            using (context = new TwitterEntities())
-            {
-                context.Users.Remove(user);
-                result = context.SaveChanges() > 0;
-            }
+            context.Users.Remove(user);
+            result = context.SaveChanges() > 0;
             return result;
         }
 
         public User GetByUsername(string username)
         {
             User result = null;
-            using (context = new TwitterEntities())
-            {
-                result = context.Users.FirstOrDefault(x => x.Username == username);
-            }
+            result = context.Users.FirstOrDefault(x => x.Username == username);
             return result;
         }
 
         public User Get(int id)
         {
             User result = null;
-            using (context = new TwitterEntities())
-            {
-                result = context.Users.FirstOrDefault(x => x.Id == id);
-            }
+            result = context.Users.FirstOrDefault(x => x.Id == id);
             return result;
+        }
+
+        public void Dispose()
+        {
+            this.context.Dispose();
         }
     }
 }

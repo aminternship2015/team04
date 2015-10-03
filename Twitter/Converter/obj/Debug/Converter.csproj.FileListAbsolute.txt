@@ -42,3 +42,14 @@ C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\Converter\bin\Debug\Entit
 C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\Converter\obj\Debug\Converter.csprojResolveAssemblyReference.cache
 C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\Converter\obj\Debug\Converter.dll
 C:\Users\stibulschii\Documents\GitRepos\team04\Twitter\Converter\obj\Debug\Converter.pdb
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\Converter.dll
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\Converter.pdb
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\DAL.dll
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\Models.dll
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\DAL.pdb
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\Models.pdb
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\obj\Debug\Converter.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\obj\Debug\Converter.dll
+C:\Users\user\Documents\GitHub\team04\Twitter\Converter\obj\Debug\Converter.pdb

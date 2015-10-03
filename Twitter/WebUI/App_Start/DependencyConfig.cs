@@ -27,7 +27,6 @@ namespace WebUI.App_Start
             builder.RegisterType<TweetsDao>().As<ITweetsDao>();
 
             Container = builder.Build();
-
             DependencyResolver.SetResolver(new AutofacDependencyResolver(Container));
         }
     }

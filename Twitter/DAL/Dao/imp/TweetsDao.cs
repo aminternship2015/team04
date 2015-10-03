@@ -32,8 +32,7 @@ namespace DAL
             bool result = false;
             using (context = new TwitterEntities())
             {
-                tweet.User = userDao.Get(tweet.User_Id);
-                context.Tweets.Attach(tweet);
+                //context.Tweets.Attach(tweet);
                 context.Tweets.Add(tweet);
 
                 result = context.SaveChanges() > 0;
