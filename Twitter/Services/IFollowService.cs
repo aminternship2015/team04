@@ -14,5 +14,6 @@ namespace Services
         bool UnFollow(int id);
         List<UserViewModel> GetFollows(int id);
         List<FollowViewModel> GetList();
+        void DeleteAllFollowWithPublisher(int publisherId);
     }
 }

@@ -137,5 +137,15 @@ namespace WebUI.Controllers
         {
             throw new NotImplementedException();
         }
+
+        public ActionResult DeleteCurrentUser()
+        {
+            var currentUser = (UserViewModel)HttpContext.Session["CurrentUser"];
+            followService.DeleteAllFollowWithPublisher(currentUser.Id);
+            tweetService.DeleteAllTweetsByUser(currentUser.Id);
+            userService.Delete(currentUser.Id);
+            HttpContext.Session["CurrentUser"] = null;          
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

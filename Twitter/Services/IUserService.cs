@@ -16,5 +16,6 @@ namespace Services
         UserViewModel GetById(int id);
         List<UserViewModel> GetAll(int currentUserId);
         void EditUser(UserViewModel user);
+        void Delete(int id);
     }
 }

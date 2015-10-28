@@ -15,11 +15,13 @@ namespace Services
     {
         private IUserDao userContext;
         private IFollowService followContext;
+        private ITweetService tweetContext;
 
-        public UserService(IUserDao userContext, IFollowService followContext)
+        public UserService(IUserDao userContext, IFollowService followContext, ITweetService tweetContext)
         {
             this.userContext = userContext;
             this.followContext = followContext;
+            this.tweetContext = tweetContext;
         }
 
         public bool AddNewUser(UserModel user)
@@ -109,6 +111,19 @@ namespace Services
             try
             {
                 userContext.Update(UserConverter.ConvertViewModelToDB(user));
+            }
+            catch (Exception e)
+            {
+                Logger.Log.Error(e.Message);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            try
+            {
+                var user = userContext.GetById(id);
+                userContext.Delete(user);
             }
             catch (Exception e)
             {

@@ -56,3 +56,12 @@ D:\GIT\team04\Twitter\Models\bin\Debug\PagedList.Mvc.dll
 D:\GIT\team04\Twitter\Models\bin\Debug\PagedList.xml
 D:\GIT\team04\Twitter\Models\bin\Debug\PagedList.Mvc.xml
 D:\GIT\team04\Twitter\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\IT\Endava\GIT\team04\Twitter\Models\bin\Debug\Models.dll
+E:\IT\Endava\GIT\team04\Twitter\Models\bin\Debug\Models.pdb
+E:\IT\Endava\GIT\team04\Twitter\Models\bin\Debug\PagedList.dll
+E:\IT\Endava\GIT\team04\Twitter\Models\bin\Debug\PagedList.Mvc.dll
+E:\IT\Endava\GIT\team04\Twitter\Models\bin\Debug\PagedList.xml
+E:\IT\Endava\GIT\team04\Twitter\Models\bin\Debug\PagedList.Mvc.xml
+E:\IT\Endava\GIT\team04\Twitter\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\IT\Endava\GIT\team04\Twitter\Models\obj\Debug\Models.dll
+E:\IT\Endava\GIT\team04\Twitter\Models\obj\Debug\Models.pdb

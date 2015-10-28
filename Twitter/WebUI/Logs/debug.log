@@ -309,3 +309,189 @@
 2015-10-28 18:50:42,982 [69] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
 2015-10-28 18:51:05,750 [74] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
 2015-10-28 18:51:56,572 [74] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-28 21:45:58,643 [5] ERROR StaticLogger.Logger - System.Data.EntityException: Произошла ошибка базового поставщика в Open. ---> System.Data.SqlClient.SqlException: При установлении соединения с SQL Server произошла ошибка, связанная с сетью или с определенным экземпляром. Сервер не найден или недоступен. Убедитесь, что имя экземпляра указано правильно и что на SQL Server разрешены удаленные соединения. (provider: Named Pipes Provider, error: 40 - Не удалось открыть подключение к SQL Server) ---> System.ComponentModel.Win32Exception: Не найдено сетевое имя
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   в System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   в System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   в System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   в System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken)
+   в System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   в System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.Open()
+   в System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   в System.Data.EntityClient.EntityConnection.Open()
+   в System.Data.Objects.ObjectContext.EnsureConnection()
+   в System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   в System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   в System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   в System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   в System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в DAL.UserDao.GetList() в e:\IT\Endava\GIT\team04\Twitter\DAL\Dao\imp\UserDao.cs:строка 17
+   в Services.UserService.IsEmailAndPassCorrect(LogInUserViewModel model) в e:\IT\Endava\GIT\team04\Twitter\Services\imp\UserService.cs:строка 58
+2015-10-28 21:48:30,386 [7] DEBUG StaticLogger.Logger - new user ID:2 vladg@mail.ru was added successfully
+2015-10-28 21:48:30,406 [7] DEBUG StaticLogger.Logger - new user vladg@mail.ru has registered
+2015-10-28 21:48:34,741 [6] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru logged in
+2015-10-28 21:48:35,034 [7] DEBUG StaticLogger.Logger - newsfeed page displayed for user 2 vladg@mail.ru
+2015-10-28 21:48:40,084 [7] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru added a new tweet ID:1
+2015-10-28 21:48:40,084 [7] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru added new tweet from newsfeed page
+2015-10-28 21:48:41,102 [6] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru added a new tweet ID:2
+2015-10-28 21:48:41,103 [6] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru added new tweet from newsfeed page
+2015-10-28 21:48:42,301 [14] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru added a new tweet ID:3
+2015-10-28 21:48:42,301 [14] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru added new tweet from newsfeed page
+2015-10-28 21:48:47,323 [6] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:48:57,014 [6] DEBUG StaticLogger.Logger - user 2 vladg@mail.ru entered on his userpage
+2015-10-28 21:48:58,240 [10] DEBUG StaticLogger.Logger - all users are displayed for ID:2 vladg@mail.ru
+2015-10-28 21:49:00,643 [7] DEBUG StaticLogger.Logger - newsfeed page displayed for user 2 vladg@mail.ru
+2015-10-28 21:49:01,444 [10] DEBUG StaticLogger.Logger - all users are displayed for ID:2 vladg@mail.ru
+2015-10-28 21:49:04,858 [6] DEBUG StaticLogger.Logger - all users are displayed for ID:2 vladg@mail.ru
+2015-10-28 21:49:05,467 [10] DEBUG StaticLogger.Logger - user 2 vladg@mail.ru entered on his userpage
+2015-10-28 21:49:07,204 [6] DEBUG StaticLogger.Logger - all users are displayed for ID:2 vladg@mail.ru
+2015-10-28 21:49:07,993 [10] DEBUG StaticLogger.Logger - newsfeed page displayed for user 2 vladg@mail.ru
+2015-10-28 21:49:11,200 [6] DEBUG StaticLogger.Logger - user 2 vladg@mail.ru entered on his userpage
+2015-10-28 21:49:11,682 [14] DEBUG StaticLogger.Logger - newsfeed page displayed for user 2 vladg@mail.ru
+2015-10-28 21:49:14,227 [6] DEBUG StaticLogger.Logger - newsfeed page displayed for user 2 vladg@mail.ru
+2015-10-28 21:49:16,901 [6] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:51:09,090 [17] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:52:40,412 [6] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:53:33,956 [7] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:53:45,164 [25] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:53:52,104 [7] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:53:57,635 [7] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:53:58,831 [25] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:53:59,266 [17] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:54:04,764 [17] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:54:41,230 [19] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:55:11,441 [7] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:55:19,834 [24] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:55:29,744 [17] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:55:37,224 [25] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:55:44,252 [24] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:56:19,018 [17] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:56:20,148 [27] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:56:41,589 [19] DEBUG StaticLogger.Logger - user ID:2 vladg@mail.ru logged in
+2015-10-28 21:56:41,651 [24] DEBUG StaticLogger.Logger - newsfeed page displayed for user 2 vladg@mail.ru
+2015-10-28 21:56:42,796 [17] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:56:58,663 [25] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:58:26,420 [14] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:58:34,556 [25] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:59:01,465 [14] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:59:10,528 [14] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 21:59:37,076 [25] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 22:01:16,386 [29] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 22:02:04,757 [14] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 22:02:56,117 [29] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 22:03:06,369 [29] DEBUG StaticLogger.Logger - user  ID:2 vladg@mail.ru has entered on his own profile
+2015-10-28 22:10:57,531 [31] DEBUG StaticLogger.Logger - new user ID:3 1@mail.ru was added successfully
+2015-10-28 22:10:57,537 [31] DEBUG StaticLogger.Logger - new user 1@mail.ru has registered
+2015-10-28 22:11:01,683 [41] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:11:01,738 [31] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:11:03,248 [31] DEBUG StaticLogger.Logger - all users are displayed for ID:3 1@mail.ru
+2015-10-28 22:11:05,214 [31] DEBUG StaticLogger.Logger - information about user ID:2 vladg@mail.ru are displayed
+2015-10-28 22:11:13,158 [31] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:11:15,840 [31] DEBUG StaticLogger.Logger - all users are displayed for ID:3 1@mail.ru
+2015-10-28 22:11:23,188 [31] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 3
+2015-10-28 22:11:23,188 [31] DEBUG StaticLogger.Logger - user ID:3 now follows user ID:2
+2015-10-28 22:11:26,401 [31] DEBUG StaticLogger.Logger - information about user ID:2 vladg@mail.ru are displayed
+2015-10-28 22:11:28,790 [31] DEBUG StaticLogger.Logger - information about user ID:2 vladg@mail.ru are displayed
+2015-10-28 22:11:30,797 [31] DEBUG StaticLogger.Logger - all users are displayed for ID:3 1@mail.ru
+2015-10-28 22:11:31,854 [41] DEBUG StaticLogger.Logger - all users are displayed for ID:3 1@mail.ru
+2015-10-28 22:11:32,839 [36] DEBUG StaticLogger.Logger - information about user ID:2 vladg@mail.ru are displayed
+2015-10-28 22:11:34,721 [36] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:11:35,254 [41] DEBUG StaticLogger.Logger - all users are displayed for ID:3 1@mail.ru
+2015-10-28 22:11:36,432 [31] DEBUG StaticLogger.Logger - information about user ID:2 vladg@mail.ru are displayed
+2015-10-28 22:11:36,968 [41] DEBUG StaticLogger.Logger - all users are displayed for ID:3 1@mail.ru
+2015-10-28 22:11:38,230 [31] DEBUG StaticLogger.Logger - information about user ID:2 vladg@mail.ru are displayed
+2015-10-28 22:11:38,919 [41] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 3
+2015-10-28 22:11:40,198 [31] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 3
+2015-10-28 22:11:40,198 [31] DEBUG StaticLogger.Logger - user ID:3 now follows user ID:2
+2015-10-28 22:11:41,135 [31] DEBUG StaticLogger.Logger - all users are displayed for ID:3 1@mail.ru
+2015-10-28 22:11:43,032 [31] DEBUG StaticLogger.Logger - user 3 1@mail.ru entered on his userpage
+2015-10-28 22:11:46,558 [31] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:12:22,342 [31] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:12:31,904 [31] ERROR StaticLogger.Logger - Метод или операция не реализована.
+2015-10-28 22:12:35,109 [36] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:12:35,129 [41] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:12:42,198 [36] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:12:45,023 [36] ERROR StaticLogger.Logger - Метод или операция не реализована.
+2015-10-28 22:13:24,803 [36] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:13:24,861 [41] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:13:30,777 [36] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:13:32,070 [43] ERROR StaticLogger.Logger - Метод или операция не реализована.
+2015-10-28 22:13:34,645 [43] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:13:34,663 [36] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:13:36,414 [36] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:13:37,573 [41] ERROR StaticLogger.Logger - Метод или операция не реализована.
+2015-10-28 22:13:39,964 [42] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:13:39,981 [36] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:13:53,374 [41] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:13:58,226 [42] ERROR StaticLogger.Logger - Метод или операция не реализована.
+2015-10-28 22:14:17,957 [41] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:14:17,975 [42] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:15:09,563 [41] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:15:11,975 [41] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:15:22,375 [43] ERROR StaticLogger.Logger - Метод или операция не реализована.
+2015-10-28 22:16:02,156 [41] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:16:02,175 [42] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:16:04,165 [41] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:16:53,840 [42] ERROR StaticLogger.Logger - Метод или операция не реализована.
+2015-10-28 22:19:11,458 [41] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:19:11,519 [42] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:19:13,617 [41] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:19:18,778 [43] ERROR StaticLogger.Logger - При обновлении записей произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2015-10-28 22:19:24,429 [43] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:19:24,445 [39] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:19:26,084 [43] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:20:10,492 [43] ERROR StaticLogger.Logger - При обновлении записей произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2015-10-28 22:20:47,525 [43] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:20:47,599 [39] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:20:50,088 [43] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:20:53,391 [35] ERROR StaticLogger.Logger - При обновлении записей произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2015-10-28 22:20:58,852 [43] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:20:58,867 [43] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:21:01,846 [43] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:21:57,211 [34] ERROR StaticLogger.Logger - При обновлении записей произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2015-10-28 22:23:33,564 [39] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:23:33,620 [34] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:23:35,185 [39] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:24:03,566 [26] ERROR StaticLogger.Logger - При обновлении записей произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2015-10-28 22:28:19,531 [45] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:28:19,591 [34] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:28:23,060 [34] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:28:34,917 [31] ERROR StaticLogger.Logger - При обновлении записей произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2015-10-28 22:28:47,120 [34] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:28:47,138 [45] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:28:48,470 [37] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:29:47,544 [34] ERROR StaticLogger.Logger - При обновлении записей произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2015-10-28 22:30:17,487 [45] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:30:17,544 [34] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:30:19,361 [34] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:40:20,882 [44] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:40:20,951 [38] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:40:22,626 [38] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:41:34,167 [44] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:41:36,177 [38] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:42:34,039 [44] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:42:37,377 [38] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:43:55,813 [40] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:43:55,874 [38] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:44:13,815 [6] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru logged in
+2015-10-28 22:44:14,161 [7] DEBUG StaticLogger.Logger - newsfeed page displayed for user 3 1@mail.ru
+2015-10-28 22:44:16,547 [7] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
+2015-10-28 22:44:19,224 [6] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 3
+2015-10-28 22:44:22,071 [6] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru was deleted successfully

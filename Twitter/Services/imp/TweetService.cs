@@ -96,5 +96,21 @@ namespace Services
             }
             return result;
         }
+
+        public void DeleteAllTweetsByUser(int authorId)
+        {
+            try
+            {
+                var tweets = tweetContext.GetList();
+                foreach (var item in tweets)
+                {
+                    if (item.User_Id == authorId) tweetContext.Delete(item.Id);
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Log.Error(e.Message);
+            }
+        }
     }
 }

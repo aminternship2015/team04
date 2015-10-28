@@ -56,3 +56,10 @@ C:\Users\vguleaev\Desktop\Twitter\Logger\bin\Debug\log4net.xml
 C:\Users\vguleaev\Desktop\Twitter\Logger\obj\Debug\Logger.dll
 C:\Users\vguleaev\Desktop\Twitter\Logger\obj\Debug\Logger.pdb
 D:\GIT\team04\Twitter\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+E:\IT\Endava\GIT\team04\Twitter\Logger\bin\Debug\Logger.dll
+E:\IT\Endava\GIT\team04\Twitter\Logger\bin\Debug\Logger.pdb
+E:\IT\Endava\GIT\team04\Twitter\Logger\bin\Debug\log4net.dll
+E:\IT\Endava\GIT\team04\Twitter\Logger\bin\Debug\log4net.xml
+E:\IT\Endava\GIT\team04\Twitter\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+E:\IT\Endava\GIT\team04\Twitter\Logger\obj\Debug\Logger.dll
+E:\IT\Endava\GIT\team04\Twitter\Logger\obj\Debug\Logger.pdb

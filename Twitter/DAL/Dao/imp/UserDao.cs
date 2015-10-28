@@ -51,7 +51,17 @@ namespace DAL
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            bool result = false;
+
+            using (var context = new TwitterEntities())
+            {
+                var user = context.Users.FirstOrDefault(x => x.Id == id);
+                context.Users.Attach(user);
+                context.Entry(user).State = EntityState.Deleted;
+                result = context.SaveChanges() > 0;
+                Logger.Log.Debug("user ID:" + user.Id + " " + user.Email + " was deleted successfully");
+            }
+            return result;
         }
 
         public bool Update(User user)

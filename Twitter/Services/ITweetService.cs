@@ -14,5 +14,6 @@ namespace Services
         bool Update(int id, string text);
         bool Delete(int id);
         List<TweetViewModel> GetListById(int userId);
+        void DeleteAllTweetsByUser(int authorId);
     }
 }

@@ -66,5 +66,22 @@ namespace Services
             }       
             return followlist;
         }
+
+        public void DeleteAllFollowWithPublisher(int publisherId)
+        {
+            try
+            {
+                var followlist = context.GetList();
+                foreach (var item in followlist)
+                {
+                    if (item.Publisher_Id == publisherId || item.Subscriber_Id == publisherId) 
+                        context.Delete(item.Id);
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Log.Error(e.Message);
+            }   
+        }
     }
 }

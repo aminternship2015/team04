@@ -8,10 +8,10 @@
 <h3>Your profile</h3>
 
 <div id="@currentUserId" class="view-edit-parent">
-    <div class="row">
-        <button class="btn btn-warning col-md-2 view-button-edit">Edit information</button>
-        <button class="btn btn-danger col-md-2 view-button-edit">Delete your profile</button>
-     </div>
+    <div>
+        <button class="btn btn-warning view-button-edit" style="width: 20%; margin-right: 20px; margin-left: 5px;">Edit information</button>
+        @Html.ActionLink("Delete your profile","DeleteCurrentUser", "User", null, new { @class="btn btn-danger", @style="width: 20%;" })
+    </div>
     <hr />
 
     <div class="panel panel-default">
