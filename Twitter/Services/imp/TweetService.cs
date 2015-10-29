@@ -43,7 +43,7 @@ namespace Services
                 foreach (var tweet in thisUserTweets)
                 {
                     var convertedTweet = TweetConverter.ConvertToViewModel(tweet);
-                    convertedTweet.Author = userContext.GetById(convertedTweet.AuthorId).First_name + " " + userContext.GetById(convertedTweet.AuthorId).Last_name;
+                    convertedTweet.Author = userContext.GetByPublisherId(convertedTweet.AuthorId).First_name + " " + userContext.GetByPublisherId(convertedTweet.AuthorId).Last_name;
                     result.Add(convertedTweet);
                 }
                 result = result.OrderByDescending(x => x.DateAdded).ToList();

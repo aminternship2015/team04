@@ -46,6 +46,11 @@ namespace WebUI.Controllers
             return View();
         }
 
+        public ActionResult DeletedSuccess()
+        {
+            return View();
+        }
+
         public ActionResult LogIn()
         {
             return View();

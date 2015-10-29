@@ -145,7 +145,7 @@ namespace WebUI.Controllers
             tweetService.DeleteAllTweetsByUser(currentUser.Id);
             userService.Delete(currentUser.Id);
             HttpContext.Session["CurrentUser"] = null;          
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("DeletedSuccess", "Account");
         }
     }
 }

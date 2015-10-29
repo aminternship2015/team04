@@ -75,7 +75,7 @@ namespace Services
                 foreach (var item in followlist)
                 {
                     if (item.Publisher_Id == publisherId || item.Subscriber_Id == publisherId) 
-                        context.Delete(item.Id);
+                        context.DeleteById(item.Id);
                 }
             }
             catch (Exception e)

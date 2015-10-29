@@ -23,8 +23,8 @@ namespace DAL
             {
                 Publisher_Id = publisherId,
                 Subscriber_Id = subscriberId,
-                User = user.GetById(publisherId),
-                User1 = user.GetById(subscriberId)
+                User = user.GetByPublisherId(publisherId),
+                User1 = user.GetByPublisherId(subscriberId)
             };
 
             using (var context = new TwitterEntities())
@@ -48,7 +48,7 @@ namespace DAL
 
                 foreach (var item in xd)
                 {
-                    result.Add(user.GetById(item.Publisher_Id));
+                    result.Add(user.GetByPublisherId(item.Publisher_Id));
                 }
             }
             return result.ToList();
@@ -64,10 +64,16 @@ namespace DAL
             return result;
         }
 
-        public Follow GetById(int id)
+        public Follow GetByPublisherId(int id)
         {
             var context = new TwitterEntities();
             return context.Follows.FirstOrDefault(x => x.Publisher_Id == id);
+        }
+
+        public Follow GetById(int id)
+        {
+            var context = new TwitterEntities();
+            return context.Follows.FirstOrDefault(x => x.Id == id);
         }
 
         public bool Delete(int id)
@@ -75,9 +81,24 @@ namespace DAL
             bool result = false;
             using (var context = new TwitterEntities())
             {
-                var follow = GetById(id);
+                var follow = GetByPublisherId(id);
 
                 context.Follows.Attach(follow);
+                context.Follows.Remove(follow);
+                result = context.SaveChanges() > 0;
+                Logger.Log.Debug("A new follow pair deleted with publisherId " + follow.Publisher_Id + " and subscriberId " + follow.Subscriber_Id);
+            }
+            return result;
+        }
+
+        public bool DeleteById(int id)
+        {
+            bool result = false;
+            using (var context = new TwitterEntities())
+            {
+                var follow = GetById(id);
+
+                context.Follows.Attach(follow); 
                 context.Follows.Remove(follow);
                 result = context.SaveChanges() > 0;
                 Logger.Log.Debug("A new follow pair deleted with publisherId " + follow.Publisher_Id + " and subscriberId " + follow.Subscriber_Id);

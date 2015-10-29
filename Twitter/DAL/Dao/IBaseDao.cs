@@ -9,7 +9,7 @@ namespace DAL
     public interface IBaseDao<T>
     {
         ICollection<T> GetList();
-        T GetById(int id);
+        T GetByPublisherId(int id);
         bool Delete(int id);
     }
 }

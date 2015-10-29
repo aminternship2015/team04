@@ -10,7 +10,7 @@
 <div id="@currentUserId" class="view-edit-parent">
     <div>
         <button class="btn btn-warning view-button-edit" style="width: 20%; margin-right: 20px; margin-left: 5px;">Edit information</button>
-        @Html.ActionLink("Delete your profile","DeleteCurrentUser", "User", null, new { @class="btn btn-danger", @style="width: 20%;" })
+        @Html.ActionLink("Delete your profile","DeleteCurrentUser", "User", null, new { @class="btn btn-danger", @style="width: 20%;", @id="deleteProfile" })
     </div>
     <hr />
 

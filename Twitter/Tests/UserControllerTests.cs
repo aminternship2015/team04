@@ -35,8 +35,15 @@ namespace Tests
             firefox.FindElement(By.Id("inputPassword")).SendKeys("123");
             firefox.FindElement(By.Id("login")).Click();
 
+            firefox.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
             string helloString = firefox.FindElement(By.Id("helloString")).Text;
             string result = "Hello, testFirstName testLastName";
+
+            //delete test user
+            firefox.Navigate().GoToUrl("http://localhost:57336/User/UsersProfile");
+            firefox.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            firefox.FindElement(By.Id("deleteProfile")).Click();
+
             Assert.IsTrue(result == helloString);
         }
 

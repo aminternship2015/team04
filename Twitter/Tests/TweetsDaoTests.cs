@@ -55,33 +55,6 @@ namespace Tests
             Assert.IsTrue(Actual);
         }
 
-        //[TestMethod]
-        //public void Add_NewTweet_False()
-        //{
-        //    userDao.Add(testUser);
-        //    userDao.Delete(testUser);
-
-        //    //arrange
-        //    Tweet newTweet = new Tweet()
-        //    {
-        //        Body = "testTweet",
-        //        Date_time = DateTime.Now,
-        //        User_Id = testUser.Id,
-        //        User = testUser
-        //    };
-
-        //    //act
-        //    var Actual = tweetDao.Add(newTweet);
-
-        //    //delete
-        //    tweetDao.Delete(newTweet);
-        //    userDao.Delete(testUser);
-
-        //    //asert
-        //    Assert.IsFalse(Actual);
-        //}
-
-
         [TestMethod]
         public void Delete_Tweet_True()
         {

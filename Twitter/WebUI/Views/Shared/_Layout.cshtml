@@ -37,12 +37,6 @@
                         <li><a href="@Url.Action("UserPage", "User")">My Page</a></li>
                         <li><a class="btn btn-default" role="button" id="rr" data-toggle="modal" data-target="#myModal">Tweet!</a></li>
                     </ul>
-                    @*                    <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Go!</button>
-                    </form>*@
                     <ul class="nav navbar-nav navbar-right">
                         <li id="helloString"><a>Hello, @currentUser.First_name @currentUser.Last_name</a></li>
                         <li class="dropdown">
@@ -54,7 +48,6 @@
                                 <li><a href="@Url.Action("LogOut", "Account")">Logout</a></li>
                             </ul>
                         </li>
-                        @*<li><a href="@Url.Action("LogOut", "Account")" class="btn btn-primary logout" role="button" style="color:white;">LogOut</a></li>*@
                     </ul>
                 </div>
             </div>

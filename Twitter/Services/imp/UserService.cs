@@ -76,7 +76,7 @@ namespace Services
             UserViewModel result = null;
             try 
             {
-                User currUser = userContext.GetById(id);
+                User currUser = userContext.GetByPublisherId(id);
                 result = UserConverter.ConvertToViewModel(currUser);
             }
             catch (Exception e)
@@ -122,7 +122,7 @@ namespace Services
         {
             try
             {
-                var user = userContext.GetById(id);
+                var user = userContext.GetByPublisherId(id);
                 userContext.Delete(user);
             }
             catch (Exception e)

@@ -83,7 +83,7 @@ namespace Tests
         {
             //act
             userDao.Add(testUser);
-            var Actual = userDao.GetById(testUser.Id);
+            var Actual = userDao.GetByPublisherId(testUser.Id);
 
             //assert
             Assert.IsNotNull(Actual);

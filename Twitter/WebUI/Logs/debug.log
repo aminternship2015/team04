@@ -495,3 +495,584 @@
 2015-10-28 22:44:16,547 [7] DEBUG StaticLogger.Logger - user  ID:3 1@mail.ru has entered on his own profile
 2015-10-28 22:44:19,224 [6] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 3
 2015-10-28 22:44:22,071 [6] DEBUG StaticLogger.Logger - user ID:3 1@mail.ru was deleted successfully
+2015-10-29 10:28:51,089 [8] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru logged in
+2015-10-29 10:28:51,458 [10] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 10:28:55,447 [8] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru added a new tweet ID:285
+2015-10-29 10:28:55,447 [8] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru added new tweet from newsfeed page
+2015-10-29 10:28:56,079 [10] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru added a new tweet ID:286
+2015-10-29 10:28:56,079 [10] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru added new tweet from newsfeed page
+2015-10-29 10:28:56,574 [9] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:28:57,894 [8] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 75
+2015-10-29 10:28:57,894 [8] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:1
+2015-10-29 10:28:58,067 [10] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 75
+2015-10-29 10:28:58,067 [10] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:2
+2015-10-29 10:28:59,188 [9] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 10:29:04,671 [9] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 10:29:23,139 [11] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 10:29:23,737 [11] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru deleted a tweet ID:285
+2015-10-29 10:29:23,740 [11] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru deleted a tweet ID:286
+2015-10-29 10:29:28,748 [11] ERROR StaticLogger.Logger - An error occurred while updating the entries. See the inner exception for details.
+2015-10-29 10:29:32,197 [11] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru logged in
+2015-10-29 10:29:32,258 [9] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 10:29:34,558 [9] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 10:29:37,342 [9] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 10:29:41,594 [9] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:43,259 [9] DEBUG StaticLogger.Logger - user 75 1@mail.ru entered on his userpage
+2015-10-29 10:29:44,235 [9] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 10:29:49,052 [9] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:50,836 [9] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 10:29:55,133 [9] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 10:29:56,031 [11] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:58,060 [9] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:58,249 [11] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:58,492 [10] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:58,647 [11] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:58,778 [10] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:29:58,948 [11] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 10:30:01,993 [9] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 10:31:12,372 [10] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 10:31:12,381 [10] ERROR StaticLogger.Logger - An error occurred while updating the entries. See the inner exception for details.
+2015-10-29 11:30:24,222 [77] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru logged in
+2015-10-29 11:30:24,339 [88] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 11:30:26,803 [88] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 11:30:35,344 [90] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:31:29,885 [90] ERROR StaticLogger.Logger - An error occurred while updating the entries. See the inner exception for details.
+2015-10-29 11:31:56,748 [77] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru logged in
+2015-10-29 11:31:56,867 [88] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 11:31:58,796 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:32:01,707 [77] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 11:34:02,003 [90] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 11:34:04,483 [77] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 11:52:00,974 [77] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged in
+2015-10-29 11:52:01,168 [90] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 11:52:03,379 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:14,486 [77] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:52:45,841 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:47,361 [86] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:52:47,954 [84] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:52:48,511 [90] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:52:49,993 [86] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:50,141 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:51,253 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:51,866 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:52,027 [84] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:52,177 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:52,320 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:52,477 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:52,636 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:52,795 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:53,052 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:52:53,467 [77] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:52:53,770 [92] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:52:54,015 [90] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:52:54,204 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:01,561 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:04,242 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:04,427 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:04,553 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:04,693 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:06,146 [77] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:53:06,519 [90] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:53:06,862 [92] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:53:07,519 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:08,601 [77] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:53:08,890 [84] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:53:09,159 [92] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:53:09,729 [84] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:09,958 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:10,139 [84] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:10,329 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:42,203 [96] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:53:43,585 [84] ERROR StaticLogger.Logger - Value cannot be null.
+Parameter name: entity
+2015-10-29 11:53:44,417 [84] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 1
+2015-10-29 11:53:44,417 [84] DEBUG StaticLogger.Logger - user ID:1 now follows user ID:2
+2015-10-29 11:53:44,806 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 11:54:08,033 [77] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru logged in
+2015-10-29 11:54:08,146 [90] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 11:54:11,278 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:14,185 [92] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 5
+2015-10-29 11:54:16,587 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:17,866 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:18,580 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:18,765 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:18,905 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:19,052 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:19,218 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:54:19,365 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:22,333 [77] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru logged in
+2015-10-29 11:55:22,441 [90] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 11:55:24,471 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:26,025 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 75
+2015-10-29 11:55:27,096 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:29,217 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 1
+2015-10-29 11:55:29,667 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:31,302 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:31,996 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:32,719 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:33,293 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:34,086 [77] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 75
+2015-10-29 11:55:34,086 [77] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:1
+2015-10-29 11:55:34,541 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:35,699 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 75
+2015-10-29 11:55:36,123 [89] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:37,649 [77] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 3 and subscriberId 75
+2015-10-29 11:55:37,649 [77] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:3
+2015-10-29 11:55:37,951 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:38,745 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:39,893 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 75
+2015-10-29 11:55:40,306 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:41,399 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 3 and subscriberId 1
+2015-10-29 11:55:41,722 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:42,603 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:43,342 [92] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 3 and subscriberId 75
+2015-10-29 11:55:43,703 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:45,404 [92] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 3 and subscriberId 75
+2015-10-29 11:55:45,404 [92] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:3
+2015-10-29 11:55:45,779 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:47,417 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 3 and subscriberId 75
+2015-10-29 11:55:47,843 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:48,993 [77] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 75
+2015-10-29 11:55:48,993 [77] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:2
+2015-10-29 11:55:49,851 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:51,305 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 1
+2015-10-29 11:55:51,747 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:52,852 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:53,633 [92] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 75
+2015-10-29 11:55:53,991 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:54,799 [90] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:55,514 [77] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 75
+2015-10-29 11:55:55,514 [77] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:1
+2015-10-29 11:55:55,909 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:56,760 [89] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:55:57,982 [77] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 75
+2015-10-29 11:55:58,546 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:00,103 [90] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 5 and subscriberId 75
+2015-10-29 11:56:00,103 [90] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:5
+2015-10-29 11:56:00,432 [89] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 4 and subscriberId 75
+2015-10-29 11:56:00,432 [89] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:4
+2015-10-29 11:56:00,767 [92] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 3 and subscriberId 75
+2015-10-29 11:56:00,767 [92] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:3
+2015-10-29 11:56:01,103 [89] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 75
+2015-10-29 11:56:01,103 [89] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:2
+2015-10-29 11:56:02,304 [77] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 75
+2015-10-29 11:56:02,304 [77] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:1
+2015-10-29 11:56:02,470 [89] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:03,332 [92] DEBUG StaticLogger.Logger - user 75 1@mail.ru entered on his userpage
+2015-10-29 11:56:04,617 [89] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 11:56:07,470 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:08,305 [89] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 75
+2015-10-29 11:56:08,814 [92] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 75
+2015-10-29 11:56:09,309 [89] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 3 and subscriberId 75
+2015-10-29 11:56:09,766 [92] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 4 and subscriberId 1
+2015-10-29 11:56:10,197 [89] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 5 and subscriberId 1
+2015-10-29 11:56:10,985 [77] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:12,343 [89] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 4 and subscriberId 75
+2015-10-29 11:56:12,725 [92] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 5 and subscriberId 75
+2015-10-29 11:56:13,015 [89] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:13,962 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:14,143 [89] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:14,260 [92] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:56:14,398 [95] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 11:57:24,177 [77] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 12:01:33,633 [18] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru logged in
+2015-10-29 12:01:33,702 [87] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:01:35,265 [18] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:01:37,071 [78] DEBUG StaticLogger.Logger - information about user ID:1 vladg@gmail.com are displayed
+2015-10-29 12:01:37,883 [18] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 75
+2015-10-29 12:01:37,883 [18] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:1
+2015-10-29 12:01:38,774 [78] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:01:40,092 [87] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:01:41,677 [87] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:01:44,384 [18] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:01:45,424 [79] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 75
+2015-10-29 12:01:46,418 [18] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:01:47,479 [79] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:01:48,229 [78] DEBUG StaticLogger.Logger - information about user ID:1 vladg@gmail.com are displayed
+2015-10-29 12:01:48,760 [87] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 75
+2015-10-29 12:01:48,760 [87] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:1
+2015-10-29 12:01:49,693 [18] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:01:50,270 [79] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:01:51,870 [73] DEBUG StaticLogger.Logger - information about user ID:2 serghei@gmail.com are displayed
+2015-10-29 12:01:52,353 [87] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 75
+2015-10-29 12:01:52,354 [87] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:2
+2015-10-29 12:01:53,305 [18] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:01:56,111 [79] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:01:57,412 [18] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 75
+2015-10-29 12:01:58,107 [79] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 75
+2015-10-29 12:01:58,882 [78] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:01:59,744 [87] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:02:00,398 [78] DEBUG StaticLogger.Logger - user 75 1@mail.ru entered on his userpage
+2015-10-29 12:02:00,977 [79] DEBUG StaticLogger.Logger - all users are displayed for ID:75 1@mail.ru
+2015-10-29 12:02:01,736 [73] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 75
+2015-10-29 12:02:01,736 [73] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:2
+2015-10-29 12:02:02,156 [79] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 75
+2015-10-29 12:02:02,156 [79] DEBUG StaticLogger.Logger - user ID:75 now follows user ID:1
+2015-10-29 12:02:02,922 [78] DEBUG StaticLogger.Logger - newsfeed page displayed for user 75 1@mail.ru
+2015-10-29 12:02:04,499 [87] DEBUG StaticLogger.Logger - user  ID:75 1@mail.ru has entered on his own profile
+2015-10-29 12:02:06,825 [78] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 75 and subscriberId 1
+2015-10-29 12:02:06,827 [78] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 75
+2015-10-29 12:02:06,830 [78] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 75
+2015-10-29 12:02:09,528 [78] DEBUG StaticLogger.Logger - user ID:75 1@mail.ru was deleted successfully
+2015-10-29 12:04:21,418 [8] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged in
+2015-10-29 12:04:21,616 [9] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 12:04:23,381 [8] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 12:04:24,020 [10] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:04:25,869 [8] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:04:41,686 [8] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:04:43,416 [8] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 1
+2015-10-29 12:04:43,416 [8] DEBUG StaticLogger.Logger - user ID:1 now follows user ID:2
+2015-10-29 12:04:44,239 [10] DEBUG StaticLogger.Logger - information about user ID:2 serghei@gmail.com are displayed
+2015-10-29 12:04:45,918 [8] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 1
+2015-10-29 12:04:46,743 [10] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 12:04:47,485 [8] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:04:48,512 [10] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 12:04:50,835 [8] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com edited a tweet ID:272
+2015-10-29 12:04:51,931 [8] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:04:52,792 [10] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 12:04:53,687 [8] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 12:04:56,273 [8] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 12:04:58,209 [8] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com deleted a tweet ID:272
+2015-10-29 12:04:59,057 [10] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 12:04:59,836 [8] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:05:00,385 [6] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 12:05:02,455 [8] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:287
+2015-10-29 12:05:02,455 [8] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 12:05:04,165 [8] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 12:05:07,552 [8] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 12:05:09,818 [9] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:288
+2015-10-29 12:05:09,818 [9] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 12:05:15,494 [8] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 12:05:18,661 [8] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-29 12:05:22,487 [10] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 12:05:24,524 [8] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:05:26,508 [8] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 12:05:27,997 [11] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 14:32:40,424 [8] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 14:32:40,611 [11] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 14:32:42,176 [5] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:289
+2015-10-29 14:32:42,176 [5] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 14:32:42,230 [11] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 14:36:22,698 [6] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 14:36:22,720 [18] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 14:36:23,711 [17] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:290
+2015-10-29 14:36:23,711 [17] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 14:36:23,881 [12] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 14:38:02,034 [8] DEBUG StaticLogger.Logger - new user ID:128 test@mail.com was added successfully
+2015-10-29 14:38:02,034 [8] DEBUG StaticLogger.Logger - new user test@mail.com has registered
+2015-10-29 14:38:03,359 [18] DEBUG StaticLogger.Logger - user ID:128 test@mail.com logged in
+2015-10-29 14:38:03,370 [5] DEBUG StaticLogger.Logger - newsfeed page displayed for user 128 test@mail.com
+2015-10-29 14:40:30,663 [22] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 14:40:54,148 [18] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 14:40:54,175 [13] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 14:40:55,146 [21] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:291
+2015-10-29 14:40:55,147 [21] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 14:40:55,329 [22] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:18:34,685 [50] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged in
+2015-10-29 15:18:34,783 [52] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:18:38,277 [50] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:40,733 [47] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:42,022 [52] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:42,990 [47] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:43,789 [50] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:44,838 [47] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:45,806 [52] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:46,549 [53] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:47,130 [50] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:18:47,889 [52] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 15:18:50,497 [47] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 15:18:51,299 [50] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:18:52,419 [52] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-29 15:18:53,635 [52] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:18:55,589 [53] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 15:18:56,888 [52] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:18:57,724 [50] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:292
+2015-10-29 15:18:57,725 [50] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 15:18:58,829 [47] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:293
+2015-10-29 15:18:58,829 [47] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 15:18:59,531 [50] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:294
+2015-10-29 15:18:59,531 [50] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 15:19:28,639 [50] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 15:19:28,664 [48] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:19:29,728 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:295
+2015-10-29 15:19:29,728 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:19:29,940 [48] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:22:05,114 [52] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:22:06,713 [51] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:22:15,897 [53] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:22:32,040 [48] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:23:08,846 [51] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:24:33,467 [51] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:24:50,187 [45] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:25:26,767 [51] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 15:25:26,797 [45] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:25:27,710 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:296
+2015-10-29 15:25:27,710 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:25:27,923 [51] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:27:37,562 [46] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 15:27:37,593 [46] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:27:38,512 [46] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:297
+2015-10-29 15:27:38,512 [46] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:27:38,705 [51] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:28:32,519 [51] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 15:28:32,550 [53] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:28:33,462 [41] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:298
+2015-10-29 15:28:33,462 [41] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:28:33,657 [51] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:30:18,996 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 15:30:19,034 [46] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:30:20,252 [51] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:299
+2015-10-29 15:30:20,252 [51] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:30:20,453 [38] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:31:06,575 [34] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:31:09,700 [41] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:300
+2015-10-29 15:31:09,700 [41] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:31:10,753 [46] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:301
+2015-10-29 15:31:10,753 [46] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:31:22,809 [34] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:31:51,361 [41] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 15:31:51,402 [34] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:31:52,296 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:302
+2015-10-29 15:31:52,296 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:31:52,495 [34] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:32:28,761 [53] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com logged in
+2015-10-29 15:32:28,799 [41] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:32:29,678 [34] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added a new tweet ID:303
+2015-10-29 15:32:29,678 [34] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:32:29,891 [53] DEBUG StaticLogger.Logger - newsfeed page displayed for user 127 test2@mail.com
+2015-10-29 15:33:01,747 [35] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:33:04,556 [53] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged out
+2015-10-29 15:33:10,395 [53] DEBUG StaticLogger.Logger - new user ID:129 2@mail.ru was added successfully
+2015-10-29 15:33:10,395 [53] DEBUG StaticLogger.Logger - new user 2@mail.ru has registered
+2015-10-29 15:33:13,010 [53] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru logged in
+2015-10-29 15:33:13,022 [53] DEBUG StaticLogger.Logger - newsfeed page displayed for user 129 2@mail.ru
+2015-10-29 15:33:14,093 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru added a new tweet ID:304
+2015-10-29 15:33:14,093 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru added new tweet from newsfeed page
+2015-10-29 15:33:14,744 [53] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru added a new tweet ID:305
+2015-10-29 15:33:14,744 [53] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru added new tweet from newsfeed page
+2015-10-29 15:33:15,374 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru added a new tweet ID:306
+2015-10-29 15:33:15,374 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru added new tweet from newsfeed page
+2015-10-29 15:33:16,211 [41] DEBUG StaticLogger.Logger - all users are displayed for ID:129 2@mail.ru
+2015-10-29 15:33:17,458 [53] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 1 and subscriberId 129
+2015-10-29 15:33:17,458 [53] DEBUG StaticLogger.Logger - user ID:129 now follows user ID:1
+2015-10-29 15:33:17,928 [46] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 2 and subscriberId 129
+2015-10-29 15:33:17,928 [46] DEBUG StaticLogger.Logger - user ID:129 now follows user ID:2
+2015-10-29 15:33:18,335 [41] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 3 and subscriberId 129
+2015-10-29 15:33:18,335 [41] DEBUG StaticLogger.Logger - user ID:129 now follows user ID:3
+2015-10-29 15:33:18,801 [46] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 4 and subscriberId 129
+2015-10-29 15:33:18,802 [46] DEBUG StaticLogger.Logger - user ID:129 now follows user ID:4
+2015-10-29 15:33:19,527 [53] DEBUG StaticLogger.Logger - user 129 2@mail.ru entered on his userpage
+2015-10-29 15:33:20,154 [35] DEBUG StaticLogger.Logger - all users are displayed for ID:129 2@mail.ru
+2015-10-29 15:33:24,595 [53] DEBUG StaticLogger.Logger - newsfeed page displayed for user 129 2@mail.ru
+2015-10-29 15:33:27,645 [53] DEBUG StaticLogger.Logger - user  ID:129 2@mail.ru has entered on his own profile
+2015-10-29 15:33:28,663 [46] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 1 and subscriberId 129
+2015-10-29 15:33:28,666 [46] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 2 and subscriberId 129
+2015-10-29 15:33:28,669 [46] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 3 and subscriberId 129
+2015-10-29 15:33:28,672 [46] DEBUG StaticLogger.Logger - A new follow pair deleted with publisherId 4 and subscriberId 129
+2015-10-29 15:33:28,681 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru deleted a tweet ID:304
+2015-10-29 15:33:28,685 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru deleted a tweet ID:305
+2015-10-29 15:33:28,688 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru deleted a tweet ID:306
+2015-10-29 15:33:28,693 [46] DEBUG StaticLogger.Logger - user ID:129 2@mail.ru was deleted successfully
+2015-10-29 15:41:09,759 [41] DEBUG StaticLogger.Logger - user  ID:127 test2@mail.com has entered on his own profile
+2015-10-29 15:42:34,378 [41] DEBUG StaticLogger.Logger - user  ID:127 test2@mail.com has entered on his own profile
+2015-10-29 15:42:35,531 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:283
+2015-10-29 15:42:35,543 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:284
+2015-10-29 15:42:35,556 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:289
+2015-10-29 15:42:35,573 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:290
+2015-10-29 15:42:35,585 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:291
+2015-10-29 15:42:35,598 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:295
+2015-10-29 15:42:35,611 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:296
+2015-10-29 15:42:35,627 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:297
+2015-10-29 15:42:35,670 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:298
+2015-10-29 15:42:35,690 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:299
+2015-10-29 15:42:35,707 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:300
+2015-10-29 15:42:35,723 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:301
+2015-10-29 15:42:35,740 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:302
+2015-10-29 15:42:35,757 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com deleted a tweet ID:303
+2015-10-29 15:42:35,775 [49] DEBUG StaticLogger.Logger - user ID:127 test2@mail.com was deleted successfully
+2015-10-29 15:43:22,576 [51] DEBUG StaticLogger.Logger - new user ID:130 test2@mail.com was added successfully
+2015-10-29 15:43:22,576 [51] DEBUG StaticLogger.Logger - new user test2@mail.com has registered
+2015-10-29 15:43:23,942 [39] DEBUG StaticLogger.Logger - user ID:130 test2@mail.com logged in
+2015-10-29 15:43:23,952 [51] DEBUG StaticLogger.Logger - newsfeed page displayed for user 130 test2@mail.com
+2015-10-29 15:43:24,840 [49] DEBUG StaticLogger.Logger - user ID:130 test2@mail.com added a new tweet ID:307
+2015-10-29 15:43:24,840 [49] DEBUG StaticLogger.Logger - user ID:130 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:43:25,013 [44] DEBUG StaticLogger.Logger - newsfeed page displayed for user 130 test2@mail.com
+2015-10-29 15:44:13,409 [49] DEBUG StaticLogger.Logger - user  ID:130 test2@mail.com has entered on his own profile
+2015-10-29 15:44:15,039 [41] DEBUG StaticLogger.Logger - user ID:130 test2@mail.com deleted a tweet ID:307
+2015-10-29 15:44:15,044 [41] DEBUG StaticLogger.Logger - user ID:130 test2@mail.com was deleted successfully
+2015-10-29 15:44:34,148 [39] DEBUG StaticLogger.Logger - new user ID:131 test2@mail.com was added successfully
+2015-10-29 15:44:34,148 [39] DEBUG StaticLogger.Logger - new user test2@mail.com has registered
+2015-10-29 15:44:35,426 [39] DEBUG StaticLogger.Logger - user ID:131 test2@mail.com logged in
+2015-10-29 15:44:35,437 [44] DEBUG StaticLogger.Logger - newsfeed page displayed for user 131 test2@mail.com
+2015-10-29 15:44:36,301 [49] DEBUG StaticLogger.Logger - user ID:131 test2@mail.com added a new tweet ID:308
+2015-10-29 15:44:36,301 [49] DEBUG StaticLogger.Logger - user ID:131 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:44:36,503 [39] DEBUG StaticLogger.Logger - newsfeed page displayed for user 131 test2@mail.com
+2015-10-29 15:44:48,947 [51] DEBUG StaticLogger.Logger - user  ID:131 test2@mail.com has entered on his own profile
+2015-10-29 15:46:55,405 [51] DEBUG StaticLogger.Logger - user ID:131 test2@mail.com logged in
+2015-10-29 15:46:55,481 [42] DEBUG StaticLogger.Logger - newsfeed page displayed for user 131 test2@mail.com
+2015-10-29 15:46:57,621 [42] DEBUG StaticLogger.Logger - user  ID:131 test2@mail.com has entered on his own profile
+2015-10-29 15:46:58,991 [51] DEBUG StaticLogger.Logger - user ID:131 test2@mail.com deleted a tweet ID:308
+2015-10-29 15:46:59,000 [51] DEBUG StaticLogger.Logger - user ID:131 test2@mail.com was deleted successfully
+2015-10-29 15:53:21,026 [45] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged in
+2015-10-29 15:53:21,133 [45] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:53:23,335 [42] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-29 15:53:24,456 [36] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 15:53:46,892 [45] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged out
+2015-10-29 15:54:26,473 [34] DEBUG StaticLogger.Logger - new user ID:132 test2@mail.com was added successfully
+2015-10-29 15:54:26,473 [34] DEBUG StaticLogger.Logger - new user test2@mail.com has registered
+2015-10-29 15:54:27,812 [34] DEBUG StaticLogger.Logger - user ID:132 test2@mail.com logged in
+2015-10-29 15:54:27,829 [42] DEBUG StaticLogger.Logger - newsfeed page displayed for user 132 test2@mail.com
+2015-10-29 15:54:28,704 [36] DEBUG StaticLogger.Logger - user ID:132 test2@mail.com added a new tweet ID:309
+2015-10-29 15:54:28,704 [36] DEBUG StaticLogger.Logger - user ID:132 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:54:28,878 [42] DEBUG StaticLogger.Logger - newsfeed page displayed for user 132 test2@mail.com
+2015-10-29 15:54:29,453 [36] DEBUG StaticLogger.Logger - user  ID:132 test2@mail.com has entered on his own profile
+2015-10-29 15:55:10,663 [36] DEBUG StaticLogger.Logger - user ID:132 test2@mail.com deleted a tweet ID:309
+2015-10-29 15:55:10,668 [36] DEBUG StaticLogger.Logger - user ID:132 test2@mail.com was deleted successfully
+2015-10-29 15:55:37,121 [42] DEBUG StaticLogger.Logger - new user ID:133 test2@mail.com was added successfully
+2015-10-29 15:55:37,121 [42] DEBUG StaticLogger.Logger - new user test2@mail.com has registered
+2015-10-29 15:55:38,805 [37] DEBUG StaticLogger.Logger - user ID:133 test2@mail.com logged in
+2015-10-29 15:55:38,813 [38] DEBUG StaticLogger.Logger - newsfeed page displayed for user 133 test2@mail.com
+2015-10-29 15:55:40,113 [37] DEBUG StaticLogger.Logger - user ID:133 test2@mail.com added a new tweet ID:310
+2015-10-29 15:55:40,113 [37] DEBUG StaticLogger.Logger - user ID:133 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:55:40,305 [37] DEBUG StaticLogger.Logger - newsfeed page displayed for user 133 test2@mail.com
+2015-10-29 15:55:40,814 [42] DEBUG StaticLogger.Logger - user  ID:133 test2@mail.com has entered on his own profile
+2015-10-29 15:55:41,370 [36] DEBUG StaticLogger.Logger - user ID:133 test2@mail.com deleted a tweet ID:310
+2015-10-29 15:55:41,373 [36] DEBUG StaticLogger.Logger - user ID:133 test2@mail.com was deleted successfully
+2015-10-29 15:56:21,017 [37] DEBUG StaticLogger.Logger - new user ID:134 test2@mail.com was added successfully
+2015-10-29 15:56:21,017 [37] DEBUG StaticLogger.Logger - new user test2@mail.com has registered
+2015-10-29 15:56:22,330 [37] DEBUG StaticLogger.Logger - user ID:134 test2@mail.com logged in
+2015-10-29 15:56:22,343 [37] DEBUG StaticLogger.Logger - newsfeed page displayed for user 134 test2@mail.com
+2015-10-29 15:56:23,243 [36] DEBUG StaticLogger.Logger - user ID:134 test2@mail.com added a new tweet ID:311
+2015-10-29 15:56:23,243 [36] DEBUG StaticLogger.Logger - user ID:134 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:56:23,443 [46] DEBUG StaticLogger.Logger - newsfeed page displayed for user 134 test2@mail.com
+2015-10-29 15:56:23,847 [37] DEBUG StaticLogger.Logger - user  ID:134 test2@mail.com has entered on his own profile
+2015-10-29 15:56:24,572 [46] DEBUG StaticLogger.Logger - user ID:134 test2@mail.com deleted a tweet ID:311
+2015-10-29 15:56:24,575 [46] DEBUG StaticLogger.Logger - user ID:134 test2@mail.com was deleted successfully
+2015-10-29 15:57:47,425 [37] DEBUG StaticLogger.Logger - new user ID:135 test@mail.com was added successfully
+2015-10-29 15:57:47,425 [37] DEBUG StaticLogger.Logger - new user test@mail.com has registered
+2015-10-29 15:57:48,827 [36] DEBUG StaticLogger.Logger - user ID:135 test@mail.com logged in
+2015-10-29 15:57:48,839 [37] DEBUG StaticLogger.Logger - newsfeed page displayed for user 135 test@mail.com
+2015-10-29 15:57:49,302 [46] DEBUG StaticLogger.Logger - user  ID:135 test@mail.com has entered on his own profile
+2015-10-29 15:57:49,835 [52] DEBUG StaticLogger.Logger - user ID:135 test@mail.com was deleted successfully
+2015-10-29 15:58:16,186 [36] DEBUG StaticLogger.Logger - new user ID:136 test2@mail.com was added successfully
+2015-10-29 15:58:16,186 [36] DEBUG StaticLogger.Logger - new user test2@mail.com has registered
+2015-10-29 15:58:17,534 [36] DEBUG StaticLogger.Logger - user ID:136 test2@mail.com logged in
+2015-10-29 15:58:17,545 [52] DEBUG StaticLogger.Logger - newsfeed page displayed for user 136 test2@mail.com
+2015-10-29 15:58:18,486 [46] DEBUG StaticLogger.Logger - user ID:136 test2@mail.com added a new tweet ID:312
+2015-10-29 15:58:18,486 [46] DEBUG StaticLogger.Logger - user ID:136 test2@mail.com added new tweet from newsfeed page
+2015-10-29 15:58:18,673 [52] DEBUG StaticLogger.Logger - newsfeed page displayed for user 136 test2@mail.com
+2015-10-29 15:58:19,112 [42] DEBUG StaticLogger.Logger - user  ID:136 test2@mail.com has entered on his own profile
+2015-10-29 15:58:19,809 [46] DEBUG StaticLogger.Logger - user ID:136 test2@mail.com deleted a tweet ID:312
+2015-10-29 15:58:19,812 [46] DEBUG StaticLogger.Logger - user ID:136 test2@mail.com was deleted successfully
+2015-10-29 15:58:29,755 [52] DEBUG StaticLogger.Logger - new user ID:140 test@mail.com was added successfully
+2015-10-29 15:58:29,755 [52] DEBUG StaticLogger.Logger - new user test@mail.com has registered
+2015-10-29 15:58:31,123 [36] DEBUG StaticLogger.Logger - user ID:140 test@mail.com logged in
+2015-10-29 15:58:31,134 [46] DEBUG StaticLogger.Logger - newsfeed page displayed for user 140 test@mail.com
+2015-10-29 15:58:31,628 [52] DEBUG StaticLogger.Logger - user  ID:140 test@mail.com has entered on his own profile
+2015-10-29 15:58:32,143 [46] DEBUG StaticLogger.Logger - user ID:140 test@mail.com was deleted successfully
+2015-10-29 16:02:11,325 [32] DEBUG StaticLogger.Logger - new user ID:145 test2@mail.com was added successfully
+2015-10-29 16:02:11,332 [32] DEBUG StaticLogger.Logger - new user test2@mail.com has registered
+2015-10-29 16:02:12,697 [35] DEBUG StaticLogger.Logger - user ID:145 test2@mail.com logged in
+2015-10-29 16:02:12,753 [31] DEBUG StaticLogger.Logger - newsfeed page displayed for user 145 test2@mail.com
+2015-10-29 16:02:13,868 [32] DEBUG StaticLogger.Logger - user ID:145 test2@mail.com added a new tweet ID:316
+2015-10-29 16:02:13,868 [32] DEBUG StaticLogger.Logger - user ID:145 test2@mail.com added new tweet from newsfeed page
+2015-10-29 16:02:14,068 [46] DEBUG StaticLogger.Logger - newsfeed page displayed for user 145 test2@mail.com
+2015-10-29 16:02:14,690 [32] DEBUG StaticLogger.Logger - user  ID:145 test2@mail.com has entered on his own profile
+2015-10-29 16:02:15,261 [46] DEBUG StaticLogger.Logger - user ID:145 test2@mail.com deleted a tweet ID:316
+2015-10-29 16:02:15,264 [46] DEBUG StaticLogger.Logger - user ID:145 test2@mail.com was deleted successfully
+2015-10-29 16:07:30,745 [46] DEBUG StaticLogger.Logger - new user ID:146 33@gmail.ru was added successfully
+2015-10-29 16:07:30,752 [46] DEBUG StaticLogger.Logger - new user 33@gmail.ru has registered
+2015-10-29 16:07:34,842 [46] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru logged in
+2015-10-29 16:07:34,902 [32] DEBUG StaticLogger.Logger - newsfeed page displayed for user 146 33@gmail.ru
+2015-10-29 16:07:36,481 [46] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru added a new tweet ID:317
+2015-10-29 16:07:36,481 [46] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru added new tweet from newsfeed page
+2015-10-29 16:07:37,252 [31] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru added a new tweet ID:318
+2015-10-29 16:07:37,252 [31] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru added new tweet from newsfeed page
+2015-10-29 16:07:39,177 [46] DEBUG StaticLogger.Logger - user  ID:146 33@gmail.ru has entered on his own profile
+2015-10-29 16:07:40,526 [25] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru deleted a tweet ID:317
+2015-10-29 16:07:40,530 [25] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru deleted a tweet ID:318
+2015-10-29 16:07:40,534 [25] DEBUG StaticLogger.Logger - user ID:146 33@gmail.ru was deleted successfully
+2015-10-29 16:08:30,536 [27] DEBUG StaticLogger.Logger - new user ID:147 33@gmail.ru was added successfully
+2015-10-29 16:08:30,536 [27] DEBUG StaticLogger.Logger - new user 33@gmail.ru has registered
+2015-10-29 16:08:34,366 [25] DEBUG StaticLogger.Logger - user ID:147 33@gmail.ru logged in
+2015-10-29 16:08:34,377 [27] DEBUG StaticLogger.Logger - newsfeed page displayed for user 147 33@gmail.ru
+2015-10-29 16:08:35,846 [25] DEBUG StaticLogger.Logger - user ID:147 33@gmail.ru added a new tweet ID:319
+2015-10-29 16:08:35,846 [25] DEBUG StaticLogger.Logger - user ID:147 33@gmail.ru added new tweet from newsfeed page
+2015-10-29 16:08:37,078 [46] DEBUG StaticLogger.Logger - user  ID:147 33@gmail.ru has entered on his own profile
+2015-10-29 16:08:38,009 [25] DEBUG StaticLogger.Logger - user ID:147 33@gmail.ru deleted a tweet ID:319
+2015-10-29 16:08:38,011 [25] DEBUG StaticLogger.Logger - user ID:147 33@gmail.ru was deleted successfully
+2015-10-29 16:09:11,420 [46] DEBUG StaticLogger.Logger - new user ID:148 44@gmail.ro was added successfully
+2015-10-29 16:09:11,426 [46] DEBUG StaticLogger.Logger - new user 44@gmail.ro has registered
+2015-10-29 16:09:14,259 [46] DEBUG StaticLogger.Logger - user ID:148 44@gmail.ro logged in
+2015-10-29 16:09:14,322 [46] DEBUG StaticLogger.Logger - newsfeed page displayed for user 148 44@gmail.ro
+2015-10-29 16:09:16,323 [46] DEBUG StaticLogger.Logger - user  ID:148 44@gmail.ro has entered on his own profile
+2015-10-29 16:09:18,116 [25] DEBUG StaticLogger.Logger - user ID:148 44@gmail.ro was deleted successfully
+2015-10-29 16:11:53,614 [31] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged in
+2015-10-29 16:11:53,719 [27] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 16:11:54,530 [24] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:11:56,067 [31] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 5 and subscriberId 1
+2015-10-29 16:11:56,067 [31] DEBUG StaticLogger.Logger - user ID:1 now follows user ID:5
+2015-10-29 16:11:56,795 [25] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 4 and subscriberId 1
+2015-10-29 16:11:56,795 [25] DEBUG StaticLogger.Logger - user ID:1 now follows user ID:4
+2015-10-29 16:11:57,920 [19] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:11:58,552 [27] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:11:58,738 [25] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:11:59,220 [27] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 7 and subscriberId 1
+2015-10-29 16:11:59,220 [27] DEBUG StaticLogger.Logger - user ID:1 now follows user ID:7
+2015-10-29 16:11:59,635 [25] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:12:00,981 [25] DEBUG StaticLogger.Logger - information about user ID:8 itrofimova@endava.net are displayed
+2015-10-29 16:12:02,093 [31] DEBUG StaticLogger.Logger - A new follow pair created with publisherId 8 and subscriberId 1
+2015-10-29 16:12:02,093 [31] DEBUG StaticLogger.Logger - user ID:1 now follows user ID:8
+2015-10-29 16:12:02,629 [25] DEBUG StaticLogger.Logger - information about user ID:8 itrofimova@endava.net are displayed
+2015-10-29 16:12:03,674 [26] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 16:12:04,284 [27] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 16:12:08,222 [27] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-29 16:12:40,215 [29] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 16:12:41,974 [31] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-29 16:12:49,126 [31] DEBUG StaticLogger.Logger - User ID:1 vladg@gmail.com1 was updated successfully
+2015-10-29 16:12:49,126 [31] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com updated own information
+2015-10-29 16:12:49,139 [25] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-29 16:12:53,361 [31] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com1
+2015-10-29 16:12:54,154 [25] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com1
+2015-10-29 16:12:55,318 [31] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com1 logged out
+2015-10-29 16:13:00,837 [19] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com1 logged in
+2015-10-29 16:13:01,002 [31] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com1
+2015-10-29 16:13:02,462 [27] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com1 has entered on his own profile
+2015-10-29 16:13:09,969 [25] DEBUG StaticLogger.Logger - User ID:1 vladg@gmail.com was updated successfully
+2015-10-29 16:13:09,969 [25] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com1 updated own information
+2015-10-29 16:13:09,986 [27] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com1 has entered on his own profile
+2015-10-29 16:13:11,605 [31] DEBUG StaticLogger.Logger - user  ID:1 vladg@gmail.com has entered on his own profile
+2015-10-29 16:13:12,570 [24] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:13:13,191 [27] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 16:13:14,341 [31] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged out
+2015-10-29 16:13:16,788 [31] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com logged in
+2015-10-29 16:13:16,937 [27] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 16:13:17,994 [29] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:13:19,348 [31] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 16:13:21,819 [31] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 16:13:22,417 [25] DEBUG StaticLogger.Logger - all users are displayed for ID:1 vladg@gmail.com
+2015-10-29 16:13:25,565 [27] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com
+2015-10-29 16:13:27,400 [24] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:320
+2015-10-29 16:13:27,400 [24] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 16:13:30,125 [27] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:321
+2015-10-29 16:13:30,125 [27] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 16:13:32,677 [27] DEBUG StaticLogger.Logger - user 1 vladg@gmail.com entered on his userpage
+2015-10-29 16:13:34,406 [31] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added a new tweet ID:322
+2015-10-29 16:13:34,406 [31] DEBUG StaticLogger.Logger - user ID:1 vladg@gmail.com added new tweet from newsfeed page
+2015-10-29 16:13:35,447 [25] DEBUG StaticLogger.Logger - newsfeed page displayed for user 1 vladg@gmail.com

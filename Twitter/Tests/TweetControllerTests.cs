@@ -20,16 +20,16 @@ namespace Tests
         {
             firefox = new FirefoxDriver();
             firefox.Navigate().GoToUrl("http://localhost:57336/");
-            //firefox.FindElement(By.Id("register")).Click();
-            firefox.FindElement(By.Id("login")).Click();
+            firefox.FindElement(By.Id("register")).Click();
+            //firefox.FindElement(By.Id("login")).Click();
 
             //register page
-            //firefox.FindElement(By.Id("inputFirstName")).SendKeys("testFirstName");
-            //firefox.FindElement(By.Id("inputLastName")).SendKeys("testLastName");
-            //firefox.FindElement(By.Id("inputEmail")).SendKeys("test2@mail.com");
-            //firefox.FindElement(By.Id("inputPassword")).SendKeys("123");
-            //firefox.FindElement(By.Id("submit")).Click();
-            //firefox.FindElement(By.Id("login")).Click();
+            firefox.FindElement(By.Id("inputFirstName")).SendKeys("testFirstName");
+            firefox.FindElement(By.Id("inputLastName")).SendKeys("testLastName");
+            firefox.FindElement(By.Id("inputEmail")).SendKeys("test2@mail.com");
+            firefox.FindElement(By.Id("inputPassword")).SendKeys("123");
+            firefox.FindElement(By.Id("submit")).Click();
+            firefox.FindElement(By.Id("login")).Click();
 
             //log in page
             firefox.FindElement(By.Id("inputEmail")).SendKeys("test2@mail.com");
@@ -40,9 +40,16 @@ namespace Tests
             firefox.FindElement(By.Name("Body")).SendKeys("test Tweet");
 
             firefox.FindElement(By.Id("tweetbutton")).Click();
-            firefox.FindElement(By.Id("home")).Click(); 
+            firefox.FindElement(By.Id("home")).Click();
+            firefox.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10)); 
 
-            string tweetMessage = firefox.FindElement(By.TagName("h5")).Text;
+            IWebElement firstTweet = firefox.FindElement(By.Id("tweet 1"));
+            string tweetMessage = firstTweet.Text;
+
+            //delete test user
+            firefox.Navigate().GoToUrl("http://localhost:57336/User/UsersProfile");
+            firefox.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            firefox.FindElement(By.Id("deleteProfile")).Click();
 
             Assert.IsTrue(tweetMessage == "test Tweet");
         }

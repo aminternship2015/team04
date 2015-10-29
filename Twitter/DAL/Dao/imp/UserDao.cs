@@ -66,7 +66,7 @@ namespace DAL
 
         public bool Update(User user)
         {
-            var pass = GetById(user.Id).Passwrd;
+            var pass = GetByPublisherId(user.Id).Passwrd;
             bool result = false;
             user.Passwrd = pass;
 
@@ -80,7 +80,7 @@ namespace DAL
             return result;
         }
 
-        public User GetById(int id)
+        public User GetByPublisherId(int id)
         {
             User result = null;
 

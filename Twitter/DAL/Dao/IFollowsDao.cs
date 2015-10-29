@@ -11,5 +11,6 @@ namespace DAL
     {
         bool Add(int id, int id2);
         ICollection<User> GetUserFollows(int currentUserId);
+        bool DeleteById(int id);
     }
 }
