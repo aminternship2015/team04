@@ -1,0 +1,16 @@
+D:\GIT\team04\Twitter\DAL\bin\Release\DAL.dll.config
+D:\GIT\team04\Twitter\DAL\bin\Release\DAL.dll
+D:\GIT\team04\Twitter\DAL\bin\Release\DAL.pdb
+D:\GIT\team04\Twitter\DAL\bin\Release\EntityFramework.dll
+D:\GIT\team04\Twitter\DAL\bin\Release\log4net.dll
+D:\GIT\team04\Twitter\DAL\bin\Release\Logger.dll
+D:\GIT\team04\Twitter\DAL\bin\Release\PagedList.dll
+D:\GIT\team04\Twitter\DAL\bin\Release\PagedList.Mvc.dll
+D:\GIT\team04\Twitter\DAL\bin\Release\Logger.pdb
+D:\GIT\team04\Twitter\DAL\bin\Release\EntityFramework.xml
+D:\GIT\team04\Twitter\DAL\bin\Release\log4net.xml
+D:\GIT\team04\Twitter\DAL\bin\Release\PagedList.xml
+D:\GIT\team04\Twitter\DAL\bin\Release\PagedList.Mvc.xml
+D:\GIT\team04\Twitter\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\GIT\team04\Twitter\DAL\obj\Release\DAL.dll
+D:\GIT\team04\Twitter\DAL\obj\Release\DAL.pdb

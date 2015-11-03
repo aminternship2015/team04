@@ -1,0 +1,41 @@
+﻿@model PagedList.IPagedList<Models.TweetViewModel>
+@using PagedList.Mvc;
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Newsfeed</title>
+</head>
+<body>
+    <div id="newsfeed-tweets" style="width: 50%; margin: 0 auto;">
+        <h2>What's new?</h2>
+        @{ Html.RenderPartial("Add", new Models.TweetModel()); }
+
+        <h3>Tweets:</h3>
+        <div class="form-horizontal">
+            <h5>
+                @Html.Partial("TweetPartial", @Model)
+            </h5>
+        </div>
+
+
+        <div class="text-center">
+            <div class="btn-group">
+                @if (Model.PageCount > 1) 
+                {
+                    <span>Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+                    from @Model.PageCount
+                    </span>
+                    @Html.PagedListPager(Model, page => Url.Action("Newsfeed", new { page }))
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

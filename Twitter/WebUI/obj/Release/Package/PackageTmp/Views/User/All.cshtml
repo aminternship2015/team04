@@ -1,0 +1,62 @@
+﻿@model Models.ViewModels.AllViewModel
+
+@{
+    var currentUserId = ((Models.UserViewModel)HttpContext.Current.Session["CurrentUser"]).Id;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>All</title>
+</head>
+<body>
+    <div id="all-users">
+        <h2>All Users</h2>
+        <span class="badge">Total users: @Model.TotalUsers</span>
+        @*<table class="table table-striped table-hover ">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var user in Model.Users)
+                {
+                    <tr class="users-table" id="@user.Id">
+                        <td>@(Model.Users.IndexOf(user) + 1)</td>
+                        <td>
+                            @Html.ActionLink(@user.First_name, "Info", "User", new { @user.Id }, null)
+                        </td>
+                        <td>
+                            @Html.ActionLink(@user.Last_name, "Info", "User", new { @user.Id }, null)
+                        </td>
+                        <td>
+                            @user.Email
+                        </td>
+                        <td width="12%">
+                            @if (user.IsFollowedByCurrent)
+                            {
+                                <span class="btn unfoll" style="display:block; width: 100%;" >Unfollow</span> 
+                                <span class="btn foll" style="display:none; width: 100%;">Follow</span>
+                            }
+                            else
+                            {
+                                <span class="btn unfoll" style="display:none; width: 100%;">Unfollow</span> 
+                                <span class="btn foll" style="display:block; width: 100%;">Follow</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>*@
+        @Html.Partial("AllPartial", @Model.Users)
+    </div>
+</body>
+</html>

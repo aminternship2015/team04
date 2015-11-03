@@ -1,0 +1,39 @@
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\BL.dll
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\BL.pdb
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\Converter.dll
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\DAL.dll
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\Models.dll
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\EntityFramework.dll
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\Converter.pdb
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\DAL.pdb
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\Models.pdb
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\bin\Debug\EntityFramework.xml
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\obj\Debug\BL.dll
+C:\Users\Vlad\documents\visual studio 2012\Projects\Twitter\BL\obj\Debug\BL.pdb
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\BL.dll
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\BL.pdb
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\Converter.dll
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\DAL.dll
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\Models.dll
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\EntityFramework.dll
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\Converter.pdb
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\DAL.pdb
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\Models.pdb
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\bin\Debug\EntityFramework.xml
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\obj\Debug\BL.dll
+E:\IT\Endava\Twitter\GIT\team04\Twitter\BL\obj\Debug\BL.pdb
+D:\GIT\team04\Twitter\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\GIT\team04\Twitter\BL\bin\Debug\BL.dll
+D:\GIT\team04\Twitter\BL\bin\Debug\BL.pdb
+D:\GIT\team04\Twitter\BL\bin\Debug\Converter.dll
+D:\GIT\team04\Twitter\BL\bin\Debug\DAL.dll
+D:\GIT\team04\Twitter\BL\bin\Debug\Models.dll
+D:\GIT\team04\Twitter\BL\bin\Debug\EntityFramework.dll
+D:\GIT\team04\Twitter\BL\bin\Debug\Converter.pdb
+D:\GIT\team04\Twitter\BL\bin\Debug\DAL.pdb
+D:\GIT\team04\Twitter\BL\bin\Debug\Models.pdb
+D:\GIT\team04\Twitter\BL\bin\Debug\EntityFramework.xml
+D:\GIT\team04\Twitter\BL\obj\Debug\BL.dll
+D:\GIT\team04\Twitter\BL\obj\Debug\BL.pdb

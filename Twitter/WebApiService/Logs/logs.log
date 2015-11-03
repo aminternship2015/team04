@@ -1,0 +1,29 @@
+2015-11-02 13:45:10,038 [9] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:45:16,266 [8] DEBUG StaticLogger.Logger - User with id:1was requested.Method:GET; Status code 200
+2015-11-02 13:45:19,847 [8] DEBUG StaticLogger.Logger - User with id:10was requested.Method:GET; Status code 200
+2015-11-02 13:45:32,659 [8] DEBUG StaticLogger.Logger - 
+2015-11-02 13:45:32,659 [8] DEBUG StaticLogger.Logger - Method POST was requested.Status code: 201. New user was successfuly added.
+2015-11-02 13:45:38,708 [9] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:48:12,875 [8] DEBUG StaticLogger.Logger - 
+2015-11-02 13:48:12,875 [8] DEBUG StaticLogger.Logger - Method POST was requested.Status code: 201. New user was successfuly added.
+2015-11-02 13:48:18,415 [8] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:48:26,965 [15] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:48:42,319 [8] DEBUG StaticLogger.Logger - Method: DELETE was requested.Status code 200.User was successfuly deleted.
+2015-11-02 13:48:45,837 [8] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:48:53,393 [8] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:49:01,631 [8] DEBUG StaticLogger.Logger - User with id:158was requested.Method:GET; Status code 200
+2015-11-02 13:49:14,855 [8] DEBUG StaticLogger.Logger - User with id:158has been changed. Method: PUT requested. Status code: 201
+2015-11-02 13:49:18,324 [8] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:49:35,090 [8] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:49:35,584 [14] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 13:49:39,188 [14] DEBUG StaticLogger.Logger - Method: DELETE was requested.Status code 200.User was successfuly deleted.
+2015-11-02 13:49:42,618 [8] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 17:55:01,134 [10] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 17:55:19,431 [12] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 17:56:10,685 [9] DEBUG StaticLogger.Logger - List of users was requested.Method  GET was requested.Status code 200
+2015-11-02 17:56:18,152 [11] DEBUG StaticLogger.Logger - User with id:2was requested.Method:GET; Status code 200
+2015-11-02 17:56:50,995 [9] DEBUG StaticLogger.Logger - 
+2015-11-02 17:56:50,995 [9] DEBUG StaticLogger.Logger - Method POST was requested.Status code: 201. New user was successfuly added.
+2015-11-02 17:57:23,690 [9] DEBUG StaticLogger.Logger - Method: DELETE was requested.Status code 200.User was successfuly deleted.
+2015-11-02 17:57:38,911 [9] DEBUG StaticLogger.Logger - User with id:4was requested.Method:GET; Status code 200
+2015-11-02 17:57:47,536 [13] DEBUG StaticLogger.Logger - User with id:4has been changed. Method: PUT requested. Status code: 201

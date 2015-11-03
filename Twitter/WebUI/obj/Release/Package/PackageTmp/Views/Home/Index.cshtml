@@ -1,0 +1,40 @@
+﻿@model Models.UserModel
+@{
+    Layout = "~/Views/Shared/_StartLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="startPage" style="padding: 10%; width: 70%; margin: 0 auto">
+        <div class="panel panel-default">
+            <center>
+            <div class="panel-body">
+                    <h1>Welcome to Twitter! :)</h1>
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                            <div class="controls">
+                                <button type="button" class="btn btn-default" value="LogIn" style="width: 200px; margin: 5px"
+                             onclick="location.href='@Url.Action("LogIn", "Account")'">
+                                    Sign In</button>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button type="button" class="btn btn-default" value="Register" style="width: 200px; margin: 5px"
+                             onclick="location.href='@Url.Action("SignUp", "Account")'">
+                                    Register</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

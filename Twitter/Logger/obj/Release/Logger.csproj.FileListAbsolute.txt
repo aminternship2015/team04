@@ -1,0 +1,6 @@
+D:\GIT\team04\Twitter\Logger\bin\Release\Logger.dll
+D:\GIT\team04\Twitter\Logger\bin\Release\Logger.pdb
+D:\GIT\team04\Twitter\Logger\bin\Release\log4net.dll
+D:\GIT\team04\Twitter\Logger\bin\Release\log4net.xml
+D:\GIT\team04\Twitter\Logger\obj\Release\Logger.dll
+D:\GIT\team04\Twitter\Logger\obj\Release\Logger.pdb

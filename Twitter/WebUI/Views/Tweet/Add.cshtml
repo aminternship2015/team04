@@ -1,0 +1,27 @@
+﻿@model Models.TweetModel
+<script>
+    $(document).ready(function () {
+        
+        $("#tweetbutton").click(function () {
+            $.ajax({
+                url: '/Tweet/Add/',
+                type: "POST",
+                data: {
+                    Body: $('#Body').val()
+                },
+                success: function (data) {
+                    $('.form-horizontal').html(data);
+
+                }
+            }).complete(function () {
+                var Tweets = +($('#tweets-counter').text()) + 1;
+                $('#tweets-counter').text(Tweets);
+
+                $('.control-label').val('');
+            })
+        });
+    });
+</script>
+
+<h5>@Html.TextAreaFor(model => model.Body, 5, 60, new { @class = "control-label", @placeholder = "Say something.." })</h5>
+<input type="submit" id="tweetbutton" class="btn btn-default" value="Tweet!" />

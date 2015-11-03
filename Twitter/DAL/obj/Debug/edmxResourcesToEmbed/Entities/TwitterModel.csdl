@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TwitterModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TwitterEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Follows" EntityType="TwitterModel.Follow" />
+    <EntitySet Name="Tweets" EntityType="TwitterModel.Tweet" />
+    <EntitySet Name="Users" EntityType="TwitterModel.User" />
+    <AssociationSet Name="FK__Follows__Publish__173876EA" Association="TwitterModel.FK__Follows__Publish__173876EA">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Follows" EntitySet="Follows" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Follows__Subscri__182C9B23" Association="TwitterModel.FK__Follows__Subscri__182C9B23">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Follows" EntitySet="Follows" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tweets__User_Id__145C0A3F" Association="TwitterModel.FK__Tweets__User_Id__145C0A3F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Tweets" EntitySet="Tweets" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Follow">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Publisher_Id" Type="Int32" Nullable="false" />
+    <Property Name="Subscriber_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="TwitterModel.FK__Follows__Publish__173876EA" FromRole="Follows" ToRole="Users" />
+    <NavigationProperty Name="User1" Relationship="TwitterModel.FK__Follows__Subscri__182C9B23" FromRole="Follows" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Tweet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Id" Type="Int32" Nullable="false" />
+    <Property Name="Body" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Date_time" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="User" Relationship="TwitterModel.FK__Tweets__User_Id__145C0A3F" FromRole="Tweets" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="First_name" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Last_name" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Passwrd" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Follows" Relationship="TwitterModel.FK__Follows__Publish__173876EA" FromRole="Users" ToRole="Follows" />
+    <NavigationProperty Name="Follows1" Relationship="TwitterModel.FK__Follows__Subscri__182C9B23" FromRole="Users" ToRole="Follows" />
+    <NavigationProperty Name="Tweets" Relationship="TwitterModel.FK__Tweets__User_Id__145C0A3F" FromRole="Users" ToRole="Tweets" />
+  </EntityType>
+  <Association Name="FK__Follows__Publish__173876EA">
+    <End Role="Users" Type="TwitterModel.User" Multiplicity="1" />
+    <End Role="Follows" Type="TwitterModel.Follow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Follows">
+        <PropertyRef Name="Publisher_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Follows__Subscri__182C9B23">
+    <End Role="Users" Type="TwitterModel.User" Multiplicity="1" />
+    <End Role="Follows" Type="TwitterModel.Follow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Follows">
+        <PropertyRef Name="Subscriber_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tweets__User_Id__145C0A3F">
+    <End Role="Users" Type="TwitterModel.User" Multiplicity="1" />
+    <End Role="Tweets" Type="TwitterModel.Tweet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tweets">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

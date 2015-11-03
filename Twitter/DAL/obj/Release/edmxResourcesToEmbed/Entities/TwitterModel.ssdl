@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TwitterModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TwitterModelStoreContainer">
+    <EntitySet Name="Follows" EntityType="TwitterModel.Store.Follows" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tweets" EntityType="TwitterModel.Store.Tweets" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="TwitterModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Follows__Publish__173876EA" Association="TwitterModel.Store.FK__Follows__Publish__173876EA">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Follows" EntitySet="Follows" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Follows__Subscri__182C9B23" Association="TwitterModel.Store.FK__Follows__Subscri__182C9B23">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Follows" EntitySet="Follows" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tweets__User_Id__145C0A3F" Association="TwitterModel.Store.FK__Tweets__User_Id__145C0A3F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Tweets" EntitySet="Tweets" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Follows">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Publisher_Id" Type="int" Nullable="false" />
+    <Property Name="Subscriber_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tweets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="User_Id" Type="int" Nullable="false" />
+    <Property Name="Body" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Date_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="First_name" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Last_name" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Passwrd" Type="varchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <Association Name="FK__Follows__Publish__173876EA">
+    <End Role="Users" Type="TwitterModel.Store.Users" Multiplicity="1" />
+    <End Role="Follows" Type="TwitterModel.Store.Follows" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Follows">
+        <PropertyRef Name="Publisher_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Follows__Subscri__182C9B23">
+    <End Role="Users" Type="TwitterModel.Store.Users" Multiplicity="1" />
+    <End Role="Follows" Type="TwitterModel.Store.Follows" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Follows">
+        <PropertyRef Name="Subscriber_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tweets__User_Id__145C0A3F">
+    <End Role="Users" Type="TwitterModel.Store.Users" Multiplicity="1" />
+    <End Role="Tweets" Type="TwitterModel.Store.Tweets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tweets">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

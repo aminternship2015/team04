@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TwitterEntities-Web.config Connection String" description="TwitterEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Entities.TwitterModel.csdl|res://*/Entities.TwitterModel.ssdl|res://*/Entities.TwitterModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=EN30296 ;initial catalog=Twitter;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\GIT\\team04\\Twitter\\WebUI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TwitterEntities']/@connectionString" />
+  </parameter>
+</parameters>

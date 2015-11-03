@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+@{
+    var currentUser = ((Models.UserViewModel)HttpContext.Current.Session["CurrentUser"]);
+}
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/readable/bootstrap.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/main.css")" rel="stylesheet" type="text/css">
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/JavaScripts.js")"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #59ABE3;">
+    <div class="container">
+        <!-- Nabrar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Newsfeed", "Tweet")"><i><b>Twitter</b></i></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="@Url.Action("Newsfeed", "Tweet")">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="@Url.Action("All", "User")">People</a></li>
+                        <li><a href="@Url.Action("UserPage", "User")">My Page</a></li>
+                        <li><a class="btn btn-default" role="button" id="rr" data-toggle="modal" data-target="#myModal">Tweet!</a></li>
+                    </ul>
+                    @*                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Go!</button>
+                    </form>*@
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="helloString"><a>Hello, @currentUser.First_name @currentUser.Last_name</a></li>
+                        <li class="dropdown">
+                           @* dropdown-toggle*@ 
+                            <a href="#" class="btn btn-primary myprofile" data-toggle="dropdown" role="button" aria-expanded="false">My Profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="@Url.Action("UsersProfile", "User")">Edit Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="@Url.Action("LogOut", "Account")">Logout</a></li>
+                            </ul>
+                        </li>
+                        @*<li><a href="@Url.Action("LogOut", "Account")" class="btn btn-primary logout" role="button" style="color:white;">LogOut</a></li>*@
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nabrar -->
+
+        <!-- Tweet modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">What's up?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form center-block">
+                            <div class="form-group">
+                                <textarea class="form-control input-md" id="tweet-any-time-text" autofocus="" placeholder="What do you want to share?"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary tweet-any-time">Tweet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tweet modal -->
+
+        <!-- Page content -->
+        <div id="page-content" style="width: 95%; margin: 0 auto; background-color: #FCFDFE; border: 1px solid; border-color: #dddddd;">
+            <div style="width: 90%; margin: 0 auto; padding-bottom: 25px">
+                @RenderBody()
+            </div>
+        </div>
+        <!-- Page content -->
+    </div>
+    <div id="footer" style="background-color: #FCFDFE;">
+        <div class="container" style="background-color: #FCFDFE;">
+            <div style="width: 95%; margin: 0 auto;">
+                <p class="pull-right">©Copyright 2015</p>
+            </div>
+        </div>
+    </div>
+    <span class="back-to-top"></span>
+</body>
+</html>

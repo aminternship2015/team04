@@ -1,0 +1,42 @@
+﻿@model PagedList.IPagedList<Models.TweetViewModel> 
+@using PagedList.Mvc;
+
+<div id="tweets" style="width: 50%; margin: 0 auto;">
+    @foreach (var item in Model)
+    {
+        <div class="parent-tweet-container panel panel-primary" id="@item.Id">
+            <div class="panel-heading">
+                <div class="row" style="text-align: center">
+                    <h7 class="col-md-10" style="padding: 5px;">@item.Author</h7>
+                    <div class="button-action-edit col-md-2"><span class="glyphicon glyphicon-pencil" style="font-size: 17px;"></span></div>
+                    <div class="button-action-delete col-md-2"><span class="glyphicon glyphicon-remove" style="font-size: 17px;"></span></div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <textarea class="collapse form-control"></textarea>
+
+                <h5 class="tweet-text" style="word-wrap: break-word;">@item.Body</h5>
+
+                <div class="date-on-userpage" style="display: block">
+                    <hr style="margin-top: 0px; margin-bottom: 0px;" />@item.DateAdded</div>
+
+                <div class="buttons-save-cancel collapse row">
+                    <div style="width: 50%; margin: 0 auto;">
+                        <button type="button" class="button-action-save btn btn-default" style="width: 80px; margin-right: 20px; margin-left: 20px;">Save</button>
+                        <button type="button" class="button-action-cancel btn btn-default" style="width: 80px;">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
+
+<div class="text-center">
+    <div class="btn-group">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        from @Model.PageCount
+        @Html.PagedListPager(Model, page => Url.Action("UserPage", new { page }))
+    </div>
+</div>

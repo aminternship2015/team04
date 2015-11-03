@@ -1,0 +1,57 @@
+﻿@model Models.UserModel
+@{
+    Layout = "~/Views/Shared/_StartLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <div id="register-page" style="padding: 10%; width: 70%; margin: 0 auto">
+        <div class="panel panel-default">
+            @using (Html.BeginForm("SignUp", "Account", new { @class = "form-horizontal" }))
+            {
+                <div class="panel-body" style="width: 65%; margin: 0 auto;">
+                    <h2 class="text-center">Registration Form:</h2>
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label" for="inputFirstName">First Name</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(x => x.First_name, new { @id = "inputFirstName", @class = "form-control", @placeholder = "First name" })
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputLastName">Last Name</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(x => x.Last_name, new { @id = "inputLastName", @class = "form-control", @placeholder = "Last name" })
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">E-mail</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(x => x.Email, new { @id = "inputEmail", @class = "form-control", @placeholder = "Email" })
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputPassword">Password</label>
+                            <div class="controls">
+                                @Html.PasswordFor(x => x.Passwrd, new { @id = "inputPassword", @class = "form-control", @placeholder = "Password" })
+                            </div>
+                        </div>
+                        <div id="login-button" class="text-center">
+                            <input type="submit" value="Register!" class="btn btn-default" style="margin: 5px;" />
+                        </div>
+                        <h4 class="text-danger">@Html.ValidationSummary()</h4>
+                    </form>
+
+                    <h4 class="text-danger">@ViewBag.errorMessage</h4>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

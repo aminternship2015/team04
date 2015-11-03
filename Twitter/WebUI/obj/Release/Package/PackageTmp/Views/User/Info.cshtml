@@ -1,0 +1,50 @@
+﻿@model Models.ViewModels.InfoViewModel
+@{
+
+    var currentUserId = ((Models.UserViewModel)HttpContext.Current.Session["CurrentUser"]).Id;
+    var userId = @Model.User.Id;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Info</title>
+</head>
+<body>
+    <div id="user-info">
+        <h3>User information:</h3>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @Html.Partial("UserInfo", @Model.User)
+                <br />
+
+                <span class="badge">Tweets: @Model.TweetsCount</span>
+                <span class="badge">Following: @Model.CurrentUserFollows.Where(follows => follows.SubId == userId).Count()</span>
+                <span class="badge">Followers:<span id="followers">@Model.CurrentUserFollows.Where(follows => follows.PubId == userId).Count()</span></span>
+            </div>
+        </div>
+
+        <div class="papa-container" id="@userId">
+
+            @if (Model.Users.FirstOrDefault(x => x.Id == @userId).IsFollowedByCurrent)
+            {
+                <span class="btn action-unfollow" style="display: inline-block; width: 25%">Unfollow this user!</span>
+                <span class="btn action-follow" style="display: none;  width: 25%">Follow this user!</span>
+            }
+            else
+            {
+                <span class="btn action-unfollow" style="display: none;  width: 25%">Unfollow this user!</span>
+                <span class="btn action-follow" style="display: inline-block;  width: 25%">Follow this user!</span>
+            }
+        </div>
+        <hr />
+
+        <h3>User tweets:</h3>
+        @Html.Partial("InfoTweetsPartial", @Model.Tweets)
+    </div>
+</body>
+</html>

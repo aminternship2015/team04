@@ -1,0 +1,30 @@
+﻿@model Models.ViewModels.InfoViewModel
+
+@{
+    var currentUserId = ((Models.UserViewModel)HttpContext.Current.Session["CurrentUser"]).Id;
+    var userId = @Model.User.Id;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <title>UsersPage</title>
+</head>
+<body>
+    <div id="this-user-page">
+        <h2><span class="glyphicon glyphicon-user"> </span> Your information:</h2>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @Html.Partial("UserInfo", @Model.User)
+                <br />
+                <span class="badge"><span class="text-warning">Tweets:  </span><span id="tweet-badge">@Model.TweetsCount</span></span>
+                <span class="badge"><span class="text-warning">Following:</span> @Model.CurrentUserFollows.Where(h => h.SubId == currentUserId).Count()</span>
+                <span class="badge"><span class="text-warning">Followers: </span>@Model.CurrentUserFollows.Where(h => h.PubId == currentUserId).Count()</span>
+            </div>
+        </div>
+
+        <hr />
+
+        @Html.Partial("UserPageTweetsPartial", Model.Tweets)
+    </div>
+</body>

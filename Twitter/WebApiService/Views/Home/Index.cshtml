@@ -1,0 +1,140 @@
+﻿<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">ASP.NET Web API</a></p>
+        </div>
+    </div>
+    <script src="../Scripts/jquery-2.1.4.js"></script>
+</header>
+<div id="body" style="padding: 10px">
+
+    <section class="featured">
+        <div id="main-div">
+    </div>
+
+    <div id="add">
+        <h3>Add user:</h3>
+
+        <p>
+            <label for="userFirstName" >First name</label>
+            <input type="text" name="FirstName" id="fn"/>
+        </p>
+        <p>
+            <label for="userLastName" >Last name</label>
+            <input type="text" name="LastName" id="ln"/>
+        </p>
+        <p>
+            <label for="Email" >Email</label>
+            <input type="text" name="Email" id="email"/>
+        </p>
+        <input type="submit" id="saveUser" value="save"/>
+  
+    </div >
+    </section>
+        <div id="delete">
+        <h3>Delete User</h3>
+    <input type="text" name="userDelete" placeholder="Enter user's id" id="id-input"/>
+    <input type="submit" value="Delete" id="delete-user"/>
+    </div>
+        <div>
+        <h3>Find user</h3>
+        <p><input type="text" placeholder="Enter users id" id="input-find-value" />
+            <input type="submit" value="Find" id="find-user-by-id"/>
+        </p>    
+    </div>
+    <div id="edit" style="display:none">
+        <h3>Edit user:</h3>
+
+        <p>
+            <input type="hidden" id="users-id"/>
+        </p>
+        <p>
+            <label for="userFirstName" >First name</label>
+            <input type="text" name="FirstName" id="edit-firstname"/>
+        </p>
+        <p>
+            <label for="userLastName" >Last name</label>
+            <input type="text" name="LastName" id="edit-lastname"/>
+        </p>
+        <p>
+            <label for="Email" >Email</label>
+            <input type="text" name="Email" id="edit-email"/>
+        </p>
+        <input type="submit" id="save-editeduser" value="edit"/>
+  
+    </div >
+
+    <script>
+        $('#saveUser').click(function () {
+            var fn = $('#fn').val();
+            var ln = $('#ln').val();
+            var email = $('#email').val();
+
+            $.post('/api/UserRequest', { 'First_name': fn, 'Last_name': ln, 'Email': email }, function () {
+                alert('User added');
+                "json"
+            });
+
+        });
+
+        $('#delete-user').click(function () {
+            var id = $('#id-input').val();
+            id = +id;
+
+
+
+            $.ajax({
+                url: '/api/UserRequest/' + id,
+                type: 'DELETE',
+                dataType: 'json',
+                success: function () {
+                    alert('User has been deleted.');
+                }
+            });
+        });
+
+        $('#find-user-by-id').click(function () {
+            var id = $('#input-find-value').val();
+            id = +id;
+
+            $.getJSON('/api/UserRequest/' + id, function (data) {
+                $('#edit').show();
+                $('#edit-firstname').val(data.First_name);
+                $('#edit-lastname').val(data.Last_name);
+                $('#edit-email').val(data.Email);
+                $('#users-id').val(data.Id);
+            });
+
+        });
+
+        $('#save-editeduser').click(function () {
+            var id = $('#users-id').val();
+            id = +id;
+            var fn = $('#edit-firstname').val();
+            var ln = $('#edit-lastname').val();
+            var email = $('#edit-email').val();
+
+            $.put = function (url, data, callback, type) {
+
+                if ($.isFunction(data)) {
+                    type = type || callback,
+                    callback = data,
+                    data = {}
+                }
+
+                return $.ajax({
+                    url: url,
+                    type: 'PUT',
+                    success: callback,
+                    data: data,
+                    contentType: type
+                });
+            }
+
+            $.put('/api/UserRequest/' + id, { 'Id': id, 'First_name': fn, 'Last_name': ln, 'Email': email }, function () {
+                alert('User has been modified.');
+            });
+        });
+    </script>
+</div>

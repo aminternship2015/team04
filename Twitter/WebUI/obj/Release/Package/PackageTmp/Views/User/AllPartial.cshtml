@@ -1,0 +1,52 @@
+﻿@model PagedList.PagedList<Models.UserViewModel>
+@using PagedList.Mvc;
+
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var user in Model)
+        {
+
+            <tr class="users-table" id="@user.Id">
+                <td>@((Model.ToList().IndexOf(user) + 1) + (Model.PageSize * (Model.PageNumber - 1)))</td>
+                <td>
+                    @Html.ActionLink(@user.First_name, "Info", "User", new { @user.Id }, null)
+                </td>
+                <td>
+                    @Html.ActionLink(@user.Last_name, "Info", "User", new { @user.Id }, null)
+                </td>
+                <td>
+                    @user.Email
+                </td>
+                <td width="12%">
+                    @if (user.IsFollowedByCurrent)
+                    {
+                        <span class="btn unfoll" style="display: block; width: 100%;">Unfollow</span>
+                        <span class="btn foll" style="display: none; width: 100%;">Follow</span>
+                    }
+                    else
+                    {
+                        <span class="btn unfoll" style="display: none; width: 100%;">Unfollow</span>
+                        <span class="btn foll" style="display: block; width: 100%;">Follow</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="text-center">
+    <div class="btn-group">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        from @Model.PageCount
+        @Html.PagedListPager(Model, page => Url.Action("All", new { page }))
+    </div>
+</div>

@@ -1,0 +1,17 @@
+D:\GIT\team04\Twitter\Converter\bin\Release\Converter.dll
+D:\GIT\team04\Twitter\Converter\bin\Release\Converter.pdb
+D:\GIT\team04\Twitter\Converter\bin\Release\DAL.dll
+D:\GIT\team04\Twitter\Converter\bin\Release\Models.dll
+D:\GIT\team04\Twitter\Converter\bin\Release\EntityFramework.dll
+D:\GIT\team04\Twitter\Converter\bin\Release\Logger.dll
+D:\GIT\team04\Twitter\Converter\bin\Release\log4net.dll
+D:\GIT\team04\Twitter\Converter\bin\Release\PagedList.dll
+D:\GIT\team04\Twitter\Converter\bin\Release\DAL.pdb
+D:\GIT\team04\Twitter\Converter\bin\Release\Models.pdb
+D:\GIT\team04\Twitter\Converter\bin\Release\EntityFramework.xml
+D:\GIT\team04\Twitter\Converter\bin\Release\Logger.pdb
+D:\GIT\team04\Twitter\Converter\bin\Release\log4net.xml
+D:\GIT\team04\Twitter\Converter\bin\Release\PagedList.xml
+D:\GIT\team04\Twitter\Converter\obj\Release\Converter.csprojResolveAssemblyReference.cache
+D:\GIT\team04\Twitter\Converter\obj\Release\Converter.dll
+D:\GIT\team04\Twitter\Converter\obj\Release\Converter.pdb

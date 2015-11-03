@@ -1,0 +1,30 @@
+﻿@model Models.LogInUserViewModel
+@{
+    Layout = "~/Views/Shared/_StartLayout.cshtml"; ;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RegisterSuccess</title>
+</head>
+<body>
+    <div id="startPage" style="padding: 10%; width: 80%; margin: 0 auto">
+        <div class="panel panel-default">
+            <center>
+            <div class="panel-body">
+
+          <h2 class="text-success">You have been successfully registered!</h2>
+                <span class="glyphicon glyphicon-ok" style="font-size: 30px;"></span>
+              <h4> Now you can sign in</h4>
+
+        <button type="button" class="btn btn-default" value="LogIn"
+            onclick="location.href='@Url.Action("LogIn", "Account")'" style="margin: 5px">Sign In!</button>
+            </div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿@model List<Models.TweetViewModel>
+
+ @foreach (var item in Model)
+        {
+            @item.DateAdded <br />
+            @item.Body
+            <br />
+        }
